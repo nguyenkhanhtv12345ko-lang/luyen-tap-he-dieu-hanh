@@ -13,7 +13,7 @@ Bộ câu hỏi được trích từ **110_cau_trac_nghiem_He_dieu_hanh_C1_C2.do
 
 Có thể đảo câu hỏi, phương án hoặc cả hai. Trang chấm bằng ID của nội dung đáp án. Phương án tổng hợp giữ vị trí khi cần. Câu 105 giữ thứ tự vì đáp án gọi tên nhận định A, B, C. Câu 108 cập nhật chữ cái của hai mục được nhắc trong phương án tổng hợp.
 
-Trang lưu thứ tự, vị trí, câu đã làm và các câu đánh dấu trên cùng trình duyệt. Giọng đọc dùng Web Speech API, theo giọng Việt/Anh có trên thiết bị, với ưu tiên giọng Google.
+Trang lưu thứ tự, vị trí, câu đã làm và các câu đánh dấu trên cùng trình duyệt.
 
 ## Chạy và kiểm tra
 

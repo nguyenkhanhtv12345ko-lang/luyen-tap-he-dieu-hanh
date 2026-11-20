@@ -2,7 +2,6 @@ import { readFileSync } from "node:fs";
 import { strict as assert } from "node:assert";
 import { test } from "node:test";
 import { createRun, displayOptions, outcome, restore, selectIds, stats, submit, wrongQuestions } from "../quiz.mjs";
-import { answerSpeech, questionSpeech, splitSpeech, voiceFor } from "../speech.mjs";
 
 const bank = JSON.parse(readFileSync(new URL("../questions.json", import.meta.url), "utf8"));
 const map = new Map(bank.map(q => [q.id, q]));
@@ -77,19 +76,3 @@ test("Lọc câu sai, làm lại và khôi phục thứ tự, vị trí và kế
   assert.deepEqual(saved.marks, [106]);
   assert.equal(restore({ version: 1, main: { ...main, ids: [] } }, bank), null);
 });
-
-test("Đọc tiếng Việt, thuật ngữ Anh và chữ cái được hiển thị", () => {
-  const result = splitSpeech("Điều phối CPU bằng Round Robin sẽ dùng tham số gì?");
-  assert.deepEqual(result.map(part => part.lang), ["vi", "en", "vi", "en", "vi"]);
-  assert.equal(result[1].text, "C P U");
-  assert.equal(result[3].text, "Round Robin");
-  const option = { letter: "C", text: "Hàng đợi sẵn sàng (ready queue)" };
-  assert.equal(questionSpeech("Chọn mục phù hợp.", [option], false).length, 1);
-  assert.deepEqual(answerSpeech([option]).map(part => part.text),
-    ["Đáp án đúng là", "xê.", "Hàng đợi sẵn sàng (", "ready queue"]);
-  const voices = [{lang:"vi-VN", voiceURI:"system", name:"Hệ thống", default:true},
-    {lang:"vi-VN", voiceURI:"google", name:"Google tiếng Việt"}];
-  assert.equal(voiceFor(voices,"vi","").voiceURI, "google");
-  assert.equal(voiceFor(voices,"vi","system").voiceURI, "system");
-});
-

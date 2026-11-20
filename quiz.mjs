@@ -1,5 +1,4 @@
 export const letters = "ABCD";
-export const settings = { vi: "", en: "", rate: 1, volume: 1, readOptions: true };
 export const modes = ["original", "questions", "options", "both"];
 export const sets = ["all", "1", "2", "3", "4"];
 export const questionCount = 110;
@@ -91,11 +90,8 @@ export function restore(raw, bank) {
   if (!validRun(raw.retry, true) || raw.retry?.set !== raw.main.set) raw.retry = null;
   raw.active = raw.active === "retry" && raw.retry ? "retry" : "main";
   raw.marks = Array.isArray(raw.marks) ? [...new Set(raw.marks)].filter(id => map.has(id)) : [];
-  const speech = { ...settings, ...raw.speech };
-  speech.rate = typeof speech.rate === "number" && speech.rate >= .6 && speech.rate <= 1.5 ? speech.rate : 1;
-  speech.volume = typeof speech.volume === "number" && speech.volume >= 0 && speech.volume <= 1 ? speech.volume : 1;
-  raw.speech = speech;
   if (!["all", "pending", "wrong", "review", "marked"].includes(raw.filter)) raw.filter = "all";
-  return raw;
+  const { version, main, retry, active, marks, filter } = raw;
+  return { version, main, retry, active, marks, filter };
 }
 
