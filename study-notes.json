@@ -1,0 +1,1806 @@
+{
+  "terms": {
+    "os": {
+      "vi": "Hệ điều hành",
+      "en": "Operating System – OS"
+    },
+    "hardware": {
+      "vi": "Phần cứng",
+      "en": "Hardware"
+    },
+    "app": {
+      "vi": "Chương trình ứng dụng",
+      "en": "Application Program"
+    },
+    "abstraction": {
+      "vi": "Sự trừu tượng hóa",
+      "en": "Abstraction"
+    },
+    "vm": {
+      "vi": "Máy tính ảo",
+      "en": "Virtual Machine – VM"
+    },
+    "driver": {
+      "vi": "Trình điều khiển thiết bị",
+      "en": "Device Driver"
+    },
+    "resources": {
+      "vi": "Quản lý tài nguyên",
+      "en": "Resource Management"
+    },
+    "allocate": {
+      "vi": "Cấp phát tài nguyên",
+      "en": "Resource Allocation"
+    },
+    "contention": {
+      "vi": "Tranh chấp tài nguyên",
+      "en": "Resource Contention"
+    },
+    "batch": {
+      "vi": "Xử lý theo lô",
+      "en": "Batch Processing"
+    },
+    "job": {
+      "vi": "Công việc",
+      "en": "Job"
+    },
+    "singlebatch": {
+      "vi": "Xử lý theo lô đơn chương trình",
+      "en": "Single-program Batch Processing"
+    },
+    "multi": {
+      "vi": "Đa chương trình",
+      "en": "Multiprogramming"
+    },
+    "dma": {
+      "vi": "Truy nhập bộ nhớ trực tiếp",
+      "en": "Direct Memory Access – DMA"
+    },
+    "io": {
+      "vi": "Vào/ra",
+      "en": "Input/Output – I/O"
+    },
+    "cpu": {
+      "vi": "Bộ xử lý trung tâm",
+      "en": "Central Processing Unit – CPU"
+    },
+    "timeshare": {
+      "vi": "Phân chia thời gian",
+      "en": "Time-sharing"
+    },
+    "quantum": {
+      "vi": "Lượng tử thời gian",
+      "en": "Time Quantum"
+    },
+    "asmp": {
+      "vi": "Đa xử lý không đối xứng",
+      "en": "Asymmetric Multiprocessing – ASMP"
+    },
+    "smp": {
+      "vi": "Đa xử lý đối xứng",
+      "en": "Symmetric Multiprocessing – SMP"
+    },
+    "distributed": {
+      "vi": "Hệ thống phân tán",
+      "en": "Distributed System"
+    },
+    "localmemory": {
+      "vi": "Bộ nhớ cục bộ",
+      "en": "Local Memory"
+    },
+    "realtime": {
+      "vi": "Hệ thống thời gian thực",
+      "en": "Real-time System"
+    },
+    "deadline": {
+      "vi": "Hạn chót",
+      "en": "Deadline"
+    },
+    "reliability": {
+      "vi": "Độ tin cậy",
+      "en": "Reliability"
+    },
+    "errorhandle": {
+      "vi": "Xử lý lỗi",
+      "en": "Error Handling"
+    },
+    "security": {
+      "vi": "An toàn thông tin",
+      "en": "Security"
+    },
+    "access": {
+      "vi": "Kiểm soát truy cập",
+      "en": "Access Control"
+    },
+    "integrity": {
+      "vi": "Tính toàn vẹn dữ liệu",
+      "en": "Data Integrity"
+    },
+    "logical": {
+      "vi": "Tài nguyên logic",
+      "en": "Logical Resource"
+    },
+    "physical": {
+      "vi": "Tài nguyên vật lý",
+      "en": "Physical Resource"
+    },
+    "shell": {
+      "vi": "Bộ xử lý lệnh",
+      "en": "Shell / Command Interpreter"
+    },
+    "kernel": {
+      "vi": "Nhân hệ điều hành",
+      "en": "Kernel"
+    },
+    "buffer": {
+      "vi": "Bộ đệm",
+      "en": "Buffer"
+    },
+    "buffering": {
+      "vi": "Dùng bộ đệm",
+      "en": "Buffering"
+    },
+    "caching": {
+      "vi": "Lưu đệm để truy cập lại",
+      "en": "Caching"
+    },
+    "spooling": {
+      "vi": "Xếp hàng công việc cho thiết bị",
+      "en": "Spooling"
+    },
+    "service": {
+      "vi": "Dịch vụ hệ điều hành",
+      "en": "Operating System Service"
+    },
+    "filemanagement": {
+      "vi": "Quản lý tập tin",
+      "en": "File Management"
+    },
+    "syscall": {
+      "vi": "Lời gọi hệ thống",
+      "en": "System Call"
+    },
+    "program": {
+      "vi": "Chương trình",
+      "en": "Program"
+    },
+    "process": {
+      "vi": "Tiến trình",
+      "en": "Process"
+    },
+    "executable": {
+      "vi": "Tệp thực thi",
+      "en": "Executable File"
+    },
+    "address": {
+      "vi": "Không gian địa chỉ",
+      "en": "Address Space"
+    },
+    "loader": {
+      "vi": "Bộ nạp chương trình",
+      "en": "Loader"
+    },
+    "ready": {
+      "vi": "Sẵn sàng",
+      "en": "Ready"
+    },
+    "running": {
+      "vi": "Đang chạy",
+      "en": "Running"
+    },
+    "waiting": {
+      "vi": "Chờ sự kiện / bị chặn",
+      "en": "Waiting / Blocked"
+    },
+    "pcb": {
+      "vi": "Khối điều khiển tiến trình",
+      "en": "Process Control Block – PCB"
+    },
+    "pc": {
+      "vi": "Bộ đếm chương trình / con trỏ lệnh",
+      "en": "Program Counter – PC"
+    },
+    "registers": {
+      "vi": "Thanh ghi",
+      "en": "Registers"
+    },
+    "devicequeue": {
+      "vi": "Hàng đợi thiết bị",
+      "en": "Device Queue"
+    },
+    "readyqueue": {
+      "vi": "Hàng đợi sẵn sàng",
+      "en": "Ready Queue"
+    },
+    "longterm": {
+      "vi": "Bộ điều phối dài hạn",
+      "en": "Long-term Scheduler"
+    },
+    "shortterm": {
+      "vi": "Bộ điều phối ngắn hạn",
+      "en": "Short-term Scheduler"
+    },
+    "mediumterm": {
+      "vi": "Bộ điều phối trung hạn",
+      "en": "Medium-term Scheduler"
+    },
+    "cpubound": {
+      "vi": "Tiến trình thiên về tính toán",
+      "en": "CPU-bound Process"
+    },
+    "iobound": {
+      "vi": "Tiến trình thiên về vào/ra",
+      "en": "I/O-bound Process"
+    },
+    "switch": {
+      "vi": "Chuyển ngữ cảnh",
+      "en": "Context Switch"
+    },
+    "swapping": {
+      "vi": "Hoán chuyển tiến trình",
+      "en": "Swapping"
+    },
+    "parent": {
+      "vi": "Tiến trình cha",
+      "en": "Parent Process"
+    },
+    "child": {
+      "vi": "Tiến trình con",
+      "en": "Child Process"
+    },
+    "tree": {
+      "vi": "Cây tiến trình",
+      "en": "Process Tree"
+    },
+    "producer": {
+      "vi": "Bên sản xuất",
+      "en": "Producer"
+    },
+    "consumer": {
+      "vi": "Bên tiêu thụ",
+      "en": "Consumer"
+    },
+    "boundedbuffer": {
+      "vi": "Bộ đệm hữu hạn",
+      "en": "Bounded Buffer"
+    },
+    "ipc": {
+      "vi": "Giao tiếp liên tiến trình",
+      "en": "Interprocess Communication – IPC"
+    },
+    "shared": {
+      "vi": "Bộ nhớ dùng chung",
+      "en": "Shared Memory"
+    },
+    "message": {
+      "vi": "Truyền thông điệp",
+      "en": "Message Passing"
+    },
+    "indirect": {
+      "vi": "Giao tiếp gián tiếp",
+      "en": "Indirect Communication"
+    },
+    "mailbox": {
+      "vi": "Hộp thư thông điệp",
+      "en": "Mailbox"
+    },
+    "blockingreceive": {
+      "vi": "Nhận có chặn",
+      "en": "Blocking Receive"
+    },
+    "nonblockingreceive": {
+      "vi": "Nhận không chặn",
+      "en": "Non-blocking Receive"
+    },
+    "rendezvous": {
+      "vi": "Đồng bộ tại điểm hẹn gửi–nhận",
+      "en": "Rendezvous"
+    },
+    "thread": {
+      "vi": "Luồng",
+      "en": "Thread"
+    },
+    "stack": {
+      "vi": "Ngăn xếp",
+      "en": "Stack"
+    },
+    "multithreading": {
+      "vi": "Đa luồng",
+      "en": "Multithreading"
+    },
+    "responsiveness": {
+      "vi": "Khả năng đáp ứng",
+      "en": "Responsiveness"
+    },
+    "kthread": {
+      "vi": "Luồng mức nhân",
+      "en": "Kernel-level Thread"
+    },
+    "uthread": {
+      "vi": "Luồng mức người dùng",
+      "en": "User-level Thread"
+    },
+    "manyone": {
+      "vi": "Nhiều–một",
+      "en": "Many-to-One"
+    },
+    "manymany": {
+      "vi": "Nhiều–nhiều",
+      "en": "Many-to-Many"
+    },
+    "twolevel": {
+      "vi": "Mô hình hai mức",
+      "en": "Two-Level Model"
+    },
+    "cpuburst": {
+      "vi": "Đợt sử dụng CPU",
+      "en": "CPU Burst"
+    },
+    "ioburst": {
+      "vi": "Đợt vào/ra",
+      "en": "I/O Burst"
+    },
+    "preemptive": {
+      "vi": "Điều phối có trưng dụng",
+      "en": "Preemptive Scheduling"
+    },
+    "nonpreemptive": {
+      "vi": "Điều phối không trưng dụng",
+      "en": "Non-preemptive Scheduling"
+    },
+    "timer": {
+      "vi": "Ngắt đồng hồ",
+      "en": "Timer Interrupt"
+    },
+    "fairness": {
+      "vi": "Tính công bằng",
+      "en": "Fairness"
+    },
+    "starvation": {
+      "vi": "Bỏ đói / chờ vô hạn",
+      "en": "Starvation"
+    },
+    "throughput": {
+      "vi": "Thông lượng",
+      "en": "Throughput"
+    },
+    "utilization": {
+      "vi": "Mức sử dụng CPU",
+      "en": "CPU Utilization"
+    },
+    "response": {
+      "vi": "Thời gian đáp ứng",
+      "en": "Response Time"
+    },
+    "turnaround": {
+      "vi": "Thời gian hoàn thành tính từ lúc đến",
+      "en": "Turnaround Time"
+    },
+    "waittime": {
+      "vi": "Thời gian chờ trong hàng đợi sẵn sàng",
+      "en": "Waiting Time"
+    },
+    "fcfs": {
+      "vi": "Đến trước, phục vụ trước",
+      "en": "First Come, First Served – FCFS"
+    },
+    "convoy": {
+      "vi": "Hiệu ứng đoàn xe",
+      "en": "Convoy Effect"
+    },
+    "gantt": {
+      "vi": "Biểu đồ Gantt",
+      "en": "Gantt Chart"
+    },
+    "sjf": {
+      "vi": "Công việc ngắn nhất trước",
+      "en": "Shortest Job First – SJF"
+    },
+    "srtf": {
+      "vi": "Thời gian còn lại ngắn nhất trước",
+      "en": "Shortest Remaining Time First – SRTF"
+    },
+    "prediction": {
+      "vi": "Dự đoán đợt sử dụng CPU",
+      "en": "CPU Burst Prediction"
+    },
+    "priority": {
+      "vi": "Điều phối theo độ ưu tiên",
+      "en": "Priority Scheduling"
+    },
+    "aging": {
+      "vi": "Tăng ưu tiên theo thời gian chờ",
+      "en": "Aging"
+    },
+    "rr": {
+      "vi": "Điều phối vòng tròn",
+      "en": "Round Robin – RR"
+    },
+    "overhead": {
+      "vi": "Chi phí phụ",
+      "en": "Overhead"
+    },
+    "mlq": {
+      "vi": "Hàng đợi đa mức",
+      "en": "Multilevel Queue – MLQ"
+    },
+    "mlfq": {
+      "vi": "Hàng đợi hồi tiếp đa mức",
+      "en": "Multilevel Feedback Queue – MLFQ"
+    },
+    "criticalresource": {
+      "vi": "Tài nguyên găng",
+      "en": "Critical Resource"
+    },
+    "criticalsection": {
+      "vi": "Đoạn găng",
+      "en": "Critical Section"
+    },
+    "race": {
+      "vi": "Điều kiện tranh chấp",
+      "en": "Race Condition"
+    },
+    "lostupdate": {
+      "vi": "Mất cập nhật",
+      "en": "Lost Update"
+    },
+    "entry": {
+      "vi": "Phần vào",
+      "en": "Entry Section"
+    },
+    "exit": {
+      "vi": "Phần ra",
+      "en": "Exit Section"
+    },
+    "remainder": {
+      "vi": "Phần còn lại",
+      "en": "Remainder Section"
+    },
+    "mutex": {
+      "vi": "Loại trừ lẫn nhau",
+      "en": "Mutual Exclusion"
+    },
+    "progress": {
+      "vi": "Tiến triển",
+      "en": "Progress"
+    },
+    "boundedwaiting": {
+      "vi": "Chờ đợi hữu hạn",
+      "en": "Bounded Waiting"
+    },
+    "monitor": {
+      "vi": "Cơ chế đồng bộ monitor",
+      "en": "Monitor"
+    },
+    "turn": {
+      "vi": "Biến chỉ lượt",
+      "en": "Turn Variable"
+    },
+    "dekker": {
+      "vi": "Thuật toán Dekker",
+      "en": "Dekker’s Algorithm"
+    },
+    "testset": {
+      "vi": "Kiểm tra và đặt",
+      "en": "Test-and-Set"
+    },
+    "atomic": {
+      "vi": "Thao tác nguyên tử",
+      "en": "Atomic Operation"
+    },
+    "busy": {
+      "vi": "Chờ đợi tích cực",
+      "en": "Busy Waiting"
+    },
+    "semaphore": {
+      "vi": "Đèn hiệu / biến đếm đồng bộ",
+      "en": "Semaphore"
+    },
+    "binarysem": {
+      "vi": "Đèn hiệu nhị phân",
+      "en": "Binary Semaphore"
+    },
+    "waitop": {
+      "vi": "Chờ hoặc lấy quyền",
+      "en": "wait() / P()"
+    },
+    "signalop": {
+      "vi": "Báo hiệu hoặc trả quyền",
+      "en": "signal() / V()"
+    },
+    "block": {
+      "vi": "Chặn tiến trình",
+      "en": "block()"
+    },
+    "wakeup": {
+      "vi": "Đánh thức tiến trình",
+      "en": "wakeup()"
+    },
+    "readerswriters": {
+      "vi": "Bài toán người đọc–người ghi",
+      "en": "Readers–Writers Problem"
+    },
+    "barrier": {
+      "vi": "Hàng rào đồng bộ",
+      "en": "Barrier"
+    },
+    "philosophers": {
+      "vi": "Bài toán các triết gia ăn tối",
+      "en": "Dining Philosophers Problem"
+    },
+    "cv": {
+      "vi": "Biến điều kiện",
+      "en": "Condition Variable"
+    },
+    "cvsignal": {
+      "vi": "Báo hiệu biến điều kiện",
+      "en": "Condition Variable Signal"
+    },
+    "deadlock": {
+      "vi": "Bế tắc",
+      "en": "Deadlock"
+    },
+    "request": {
+      "vi": "Yêu cầu tài nguyên",
+      "en": "Resource Request"
+    },
+    "release": {
+      "vi": "Giải phóng tài nguyên",
+      "en": "Resource Release"
+    },
+    "holdwait": {
+      "vi": "Giữ và chờ",
+      "en": "Hold and Wait"
+    },
+    "nopreempt": {
+      "vi": "Không trưng dụng tài nguyên",
+      "en": "No Preemption"
+    },
+    "circular": {
+      "vi": "Chờ vòng tròn",
+      "en": "Circular Wait"
+    },
+    "rag": {
+      "vi": "Đồ thị cấp phát tài nguyên",
+      "en": "Resource Allocation Graph – RAG"
+    },
+    "requestedge": {
+      "vi": "Cung yêu cầu",
+      "en": "Request Edge"
+    },
+    "assignmentedge": {
+      "vi": "Cung cấp phát",
+      "en": "Assignment Edge"
+    },
+    "cycle": {
+      "vi": "Chu trình",
+      "en": "Cycle"
+    },
+    "prevention": {
+      "vi": "Phòng ngừa bế tắc",
+      "en": "Deadlock Prevention"
+    },
+    "ordering": {
+      "vi": "Thứ tự xin tài nguyên",
+      "en": "Resource Ordering"
+    },
+    "preemption": {
+      "vi": "Trưng dụng tài nguyên",
+      "en": "Resource Preemption"
+    },
+    "safe": {
+      "vi": "Trạng thái an toàn",
+      "en": "Safe State"
+    },
+    "sequence": {
+      "vi": "Chuỗi an toàn",
+      "en": "Safe Sequence"
+    },
+    "unsafe": {
+      "vi": "Trạng thái không an toàn",
+      "en": "Unsafe State"
+    },
+    "claim": {
+      "vi": "Cung đòi hỏi trước",
+      "en": "Claim Edge"
+    },
+    "avoidance": {
+      "vi": "Phòng tránh bế tắc",
+      "en": "Deadlock Avoidance"
+    },
+    "banker": {
+      "vi": "Thuật toán chủ ngân hàng",
+      "en": "Banker’s Algorithm"
+    },
+    "max": {
+      "vi": "Nhu cầu tối đa",
+      "en": "Max"
+    },
+    "allocation": {
+      "vi": "Tài nguyên đang được cấp",
+      "en": "Allocation"
+    },
+    "need": {
+      "vi": "Nhu cầu tối đa còn lại",
+      "en": "Need"
+    },
+    "work": {
+      "vi": "Tài nguyên tạm có trong mô phỏng",
+      "en": "Work"
+    },
+    "available": {
+      "vi": "Tài nguyên hiện còn",
+      "en": "Available"
+    },
+    "requestvector": {
+      "vi": "Yêu cầu đang chờ",
+      "en": "Request"
+    },
+    "detection": {
+      "vi": "Phát hiện bế tắc",
+      "en": "Deadlock Detection"
+    },
+    "recovery": {
+      "vi": "Phục hồi sau bế tắc",
+      "en": "Deadlock Recovery"
+    },
+    "processtermination": {
+      "vi": "Kết thúc tiến trình",
+      "en": "Process Termination"
+    },
+    "overlay": {
+      "vi": "Kỹ thuật nạp chồng",
+      "en": "Overlay"
+    },
+    "scheduler": {
+      "vi": "Bộ điều phối / bộ lập lịch",
+      "en": "Scheduler"
+    },
+    "dispatcher": {
+      "vi": "Bộ phân phối / bộ điều vận",
+      "en": "Dispatcher"
+    },
+    "global": {
+      "vi": "Biến toàn cục",
+      "en": "Global Variable"
+    },
+    "openfile": {
+      "vi": "Tập tin đang mở",
+      "en": "Open File"
+    }
+  },
+  "questions": {
+    "1": {
+      "terms": [
+        "os",
+        "hardware",
+        "app"
+      ],
+      "paragraphs": [
+        "Theo mô hình phân lớp, tầng dưới cung cấp CPU, bộ nhớ và thiết bị. Hệ điều hành quản lý các tài nguyên đó và cung cấp dịch vụ cho tầng ứng dụng. Chẳng hạn trình soạn thảo nhờ hệ điều hành ghi tệp, còn hệ điều hành phối hợp với thiết bị lưu trữ."
+      ]
+    },
+    "2": {
+      "terms": [
+        "abstraction",
+        "vm",
+        "driver"
+      ],
+      "paragraphs": [
+        "Ứng dụng có thể dùng thao tác quen thuộc như đọc tệp mà không phải tự điều khiển thiết bị lưu trữ. Đây là vai trò tạo một “máy tính ảo” theo nghĩa hệ điều hành cung cấp giao diện đơn giản hơn phần cứng. Trong câu này, từ đó chỉ mức trừu tượng mà hệ điều hành cung cấp."
+      ]
+    },
+    "3": {
+      "terms": [
+        "resources",
+        "allocate",
+        "contention"
+      ],
+      "paragraphs": [
+        "Máy in chỉ phục vụ một công việc tại một thời điểm. Hệ điều hành có thể tiếp nhận cả hai yêu cầu, xếp hàng rồi cấp lượt theo chính sách. Việc chọn ai dùng thiết bị và trong bao lâu thuộc quản lý tài nguyên."
+      ]
+    },
+    "4": {
+      "terms": [
+        "batch",
+        "job"
+      ],
+      "paragraphs": [
+        "Thao tác viên gom nhiều công việc cùng đầu vào và chỉ dẫn chạy thành một lô. Máy xử lý các công việc trong lô theo lịch, nên người gửi không cần thao tác trực tiếp với máy trong từng bước."
+      ]
+    },
+    "5": {
+      "terms": [
+        "dma",
+        "io",
+        "cpu"
+      ],
+      "paragraphs": [
+        "CPU hoặc trình điều khiển thiết lập vùng đệm và cấu hình lần truyền. Thiết bị hoặc bộ điều khiển DMA sau đó chuyển dữ liệu giữa thiết bị và bộ nhớ mà CPU không phải tự sao chép từng đơn vị dữ liệu."
+      ]
+    },
+    "6": {
+      "terms": [
+        "resources",
+        "allocate",
+        "utilization"
+      ],
+      "paragraphs": [
+        "Ở góc nhìn quản lý, hệ điều hành phải phân chia CPU, bộ nhớ và thiết bị cho nhiều công việc. Ví dụ, khi một tiến trình chờ đĩa, CPU có thể làm việc cho tiến trình khác để giảm thời gian rảnh."
+      ]
+    },
+    "7": {
+      "terms": [
+        "singlebatch",
+        "batch",
+        "job"
+      ],
+      "paragraphs": [
+        "Mô hình đơn chương trình phục vụ từng công việc. Khi công việc đang chạy kết thúc, hệ thống nạp hoặc khởi chạy công việc kế tiếp theo lô. Quãng thời gian công việc hiện tại chờ I/O có thể khiến CPU rảnh."
+      ]
+    },
+    "8": {
+      "terms": [
+        "multi",
+        "io",
+        "ready"
+      ],
+      "paragraphs": [
+        "Khi tiến trình đang chạy yêu cầu I/O và phải đợi, CPU có thể được giao cho tiến trình khác đã sẵn sàng. Thiết bị I/O tiếp tục xử lý yêu cầu trước đó, nhờ vậy CPU và thiết bị có thể cùng hoạt động."
+      ]
+    },
+    "9": {
+      "terms": [
+        "timeshare",
+        "quantum",
+        "readyqueue"
+      ],
+      "paragraphs": [
+        "Hệ điều hành luân phiên cấp các lát thời gian ngắn cho tiến trình sẵn sàng. Trên một lõi CPU, các phiên chỉ chạy lần lượt. Việc chuyển lượt nhanh tạo cảm giác chúng chạy đồng thời."
+      ]
+    },
+    "10": {
+      "terms": [
+        "asmp",
+        "smp",
+        "scheduler"
+      ],
+      "paragraphs": [
+        "Nhận biết qua dấu hiệu “một bộ xử lý chính”. Trong ASMP, bộ xử lý chính quyết định hoặc phân công việc cho các bộ xử lý khác. Với SMP, các bộ xử lý có thể đảm nhiệm việc điều phối thay vì phụ thuộc hoàn toàn vào một bộ chính."
+      ]
+    },
+    "11": {
+      "terms": [
+        "distributed",
+        "localmemory",
+        "message"
+      ],
+      "paragraphs": [
+        "Mỗi máy hoặc nút có bộ nhớ cục bộ của mình. Các nút phối hợp bằng cách gửi dữ liệu qua đường truyền. Dấu hiệu chính trong câu là sự kết hợp giữa bộ nhớ riêng và trao đổi qua mạng."
+      ]
+    },
+    "12": {
+      "terms": [
+        "realtime",
+        "deadline",
+        "response"
+      ],
+      "paragraphs": [
+        "Trong bài toán thời gian thực, giá trị của kết quả phụ thuộc cả nội dung lẫn thời điểm trả về. Ví dụ, một tín hiệu điều khiển đúng nhưng đến sau hạn chót có thể không còn tác dụng."
+      ]
+    },
+    "13": {
+      "terms": [
+        "reliability",
+        "errorhandle",
+        "os"
+      ],
+      "paragraphs": [
+        "Dấu hiệu cần nhìn là thông báo đúng và phản ứng phù hợp khi lỗi xảy ra. Ví dụ, khi ghi tệp thất bại, hệ thống phải báo lỗi để ứng dụng biết dữ liệu có thể chưa được lưu."
+      ]
+    },
+    "14": {
+      "terms": [
+        "security",
+        "access",
+        "integrity"
+      ],
+      "paragraphs": [
+        "Kiểm soát truy cập quyết định ai được xem hoặc sửa dữ liệu. Hạn chế ghi trái phép giúp bảo vệ tính toàn vẹn, tức dữ liệu chỉ thay đổi theo thao tác được phép. Hai dấu hiệu này cùng thuộc an toàn thông tin."
+      ]
+    },
+    "15": {
+      "terms": [
+        "logical",
+        "physical",
+        "address"
+      ],
+      "paragraphs": [
+        "Biến nhớ là đối tượng chương trình nhìn thấy và sử dụng qua tên hoặc địa chỉ. RAM là phần cứng chứa dữ liệu của biến tại thời điểm thích hợp. Vì câu hỏi hỏi về bản thân biến, slide xếp nó vào tài nguyên logic."
+      ]
+    },
+    "16": {
+      "terms": [
+        "cpu",
+        "timeshare",
+        "quantum"
+      ],
+      "paragraphs": [
+        "Các công việc có thể dùng chung năng lực của CPU bằng cách nhận các lượt chạy khác nhau. Với một CPU logic, tại một thời điểm chỉ có một luồng được chạy trên CPU đó, rồi hệ điều hành chuyển sang lượt khác."
+      ]
+    },
+    "17": {
+      "terms": [
+        "shell",
+        "app",
+        "kernel"
+      ],
+      "paragraphs": [
+        "Shell đọc dòng lệnh, phân tích tên lệnh và đối số, rồi chạy lệnh tích hợp hoặc khởi động chương trình phù hợp. Khi cần tạo tiến trình hay thao tác với tệp, shell sử dụng dịch vụ của nhân hệ điều hành."
+      ]
+    },
+    "18": {
+      "terms": [
+        "io",
+        "buffering",
+        "caching",
+        "spooling"
+      ],
+      "paragraphs": [
+        "Buffering giữ dữ liệu tạm, chẳng hạn để ghép hai thiết bị có tốc độ khác nhau.",
+        "Caching giữ bản sao để lần truy cập sau nhanh hơn. Spooling xếp hàng các công việc như lệnh in để thiết bị xử lý lần lượt."
+      ]
+    },
+    "19": {
+      "terms": [
+        "service",
+        "allocate",
+        "resources"
+      ],
+      "paragraphs": [
+        "Khi nhiều công việc hoạt động cùng lúc, hệ điều hành phải quyết định ai nhận CPU, bộ nhớ hoặc thiết bị. Dịch vụ cấp phát giúp điều phối toàn hệ thống và giảm tranh chấp giữa các công việc."
+      ]
+    },
+    "20": {
+      "terms": [
+        "syscall",
+        "filemanagement",
+        "os"
+      ],
+      "paragraphs": [
+        "Tạo, xóa, đọc và ghi đều thay đổi hoặc truy cập tệp. Chương trình gửi yêu cầu tới hệ điều hành qua lời gọi hệ thống, rồi hệ điều hành xử lý yêu cầu theo quyền và trạng thái của tệp."
+      ]
+    },
+    "21": {
+      "terms": [
+        "program",
+        "executable",
+        "process"
+      ],
+      "paragraphs": [
+        "Tệp trên đĩa chứa mã và dữ liệu của chương trình. Lúc được chạy, một tiến trình có thêm ngữ cảnh thực thi như không gian địa chỉ, trạng thái và thông tin CPU. Tệp chưa chạy vì thế là chương trình, một thực thể thụ động."
+      ]
+    },
+    "22": {
+      "terms": [
+        "program",
+        "process",
+        "address"
+      ],
+      "paragraphs": [
+        "Cùng một mã chương trình có thể khởi chạy nhiều lần với đối số hoặc dữ liệu khác nhau. Hai lần chạy có thể có định danh và không gian địa chỉ riêng. Chúng là hai tiến trình của cùng chương trình."
+      ]
+    },
+    "23": {
+      "terms": [
+        "loader",
+        "executable",
+        "address"
+      ],
+      "paragraphs": [
+        "Bộ nạp đọc cấu trúc của tệp thực thi và bố trí các vùng mã, dữ liệu trong không gian địa chỉ của tiến trình. Sau khi môi trường thực thi sẵn sàng, hệ thống có thể bắt đầu từ điểm vào của chương trình."
+      ]
+    },
+    "24": {
+      "terms": [
+        "ready",
+        "waiting",
+        "readyqueue"
+      ],
+      "paragraphs": [
+        "Tiến trình chỉ thiếu lượt CPU thì vào trạng thái Ready. Nếu nó đang đợi đĩa trả dữ liệu hoặc một sự kiện khác, trạng thái là Waiting. Từ khóa phân biệt trong câu là “chỉ còn đợi CPU”."
+      ]
+    },
+    "25": {
+      "terms": [
+        "running",
+        "waiting",
+        "io"
+      ],
+      "paragraphs": [
+        "Tiến trình đang chạy yêu cầu đọc đĩa và chưa thể tiếp tục cho đến khi có dữ liệu. Nó nhường CPU và chuyển từ Running sang Waiting. CPU có thể được giao cho một tiến trình Ready khác."
+      ]
+    },
+    "26": {
+      "terms": [
+        "waiting",
+        "ready",
+        "running"
+      ],
+      "paragraphs": [
+        "I/O hoàn tất loại bỏ lý do chờ. Tiến trình chuyển từ Waiting sang Ready và quay lại hàng đợi sẵn sàng. Nó chuyển sang Running khi được chọn cấp CPU."
+      ]
+    },
+    "27": {
+      "terms": [
+        "pcb",
+        "pc",
+        "registers"
+      ],
+      "paragraphs": [
+        "PCB là bản ghi hệ điều hành dùng để theo dõi tiến trình. Trạng thái cho biết tiến trình đang ở đâu trong vòng đời, còn bộ đếm chương trình chỉ vị trí lệnh cần tiếp tục khi tiến trình chạy lại."
+      ]
+    },
+    "28": {
+      "terms": [
+        "devicequeue",
+        "readyqueue",
+        "io"
+      ],
+      "paragraphs": [
+        "Hàng đợi thiết bị gom các tiến trình đang chờ một thiết bị vào/ra cụ thể. Hàng đợi sẵn sàng gom các tiến trình đã có thể chạy và chỉ còn chờ CPU. Tiến trình đang chờ thiết bị thuộc nhóm thứ nhất."
+      ]
+    },
+    "29": {
+      "terms": [
+        "longterm",
+        "shortterm",
+        "multi"
+      ],
+      "paragraphs": [
+        "Bộ điều phối dài hạn nhận công việc vào hệ thống để được thực hiện và kiểm soát số lượng công việc đang hoạt động. Bộ điều phối ngắn hạn chọn tiến trình tiếp theo từ những tiến trình đã sẵn sàng."
+      ]
+    },
+    "30": {
+      "terms": [
+        "cpubound",
+        "iobound",
+        "utilization"
+      ],
+      "paragraphs": [
+        "Tiến trình thiên CPU thường dành nhiều thời gian tính toán. Tiến trình thiên I/O thường đợi thiết bị. Khi có cả hai loại, tiến trình thiên CPU có thể dùng bộ xử lý trong lúc thiết bị phục vụ các yêu cầu vào/ra."
+      ]
+    },
+    "31": {
+      "terms": [
+        "switch",
+        "pc",
+        "registers",
+        "pcb"
+      ],
+      "paragraphs": [
+        "Khi ngừng P1, hệ điều hành lưu bộ đếm chương trình và các thanh ghi cần thiết của P1. Khi trao CPU cho P2, hệ điều hành nạp lại ngữ cảnh của P2. Nhờ vậy mỗi tiến trình có thể tiếp tục tại vị trí đã dừng."
+      ]
+    },
+    "32": {
+      "terms": [
+        "mediumterm",
+        "swapping",
+        "multi"
+      ],
+      "paragraphs": [
+        "Trong mô hình ở slide, bộ điều phối trung hạn có thể tạm hoán chuyển một tiến trình ra khỏi bộ nhớ. Khi phù hợp, nó đưa tiến trình trở lại để tiếp tục. Cách này điều chỉnh số tiến trình hiện diện trong bộ nhớ."
+      ]
+    },
+    "33": {
+      "terms": [
+        "parent",
+        "child",
+        "tree"
+      ],
+      "paragraphs": [
+        "Cha trực tiếp là tiến trình thực hiện việc tạo con. P0 tạo P1, nên P0 là cha của P1. P1 tạo P2, nên cha trực tiếp của P2 là P1 và P0 là tổ tiên của P2."
+      ]
+    },
+    "34": {
+      "terms": [
+        "producer",
+        "consumer",
+        "boundedbuffer"
+      ],
+      "paragraphs": [
+        "Bộ đệm hữu hạn có số ô cố định. Khi đầy, bên sản xuất phải đợi bên tiêu thụ lấy bớt một phần tử trước khi thêm mới. Ngược lại, khi đệm rỗng thì bên tiêu thụ phải đợi có phần tử."
+      ]
+    },
+    "35": {
+      "terms": [
+        "ipc",
+        "shared",
+        "message"
+      ],
+      "paragraphs": [
+        "Với bộ nhớ dùng chung, các tiến trình đọc và ghi vào một vùng nhớ chung, đồng thời phải phối hợp truy cập. Với truyền thông điệp, các bên dùng thao tác gửi và nhận để trao đổi dữ liệu."
+      ]
+    },
+    "36": {
+      "terms": [
+        "indirect",
+        "mailbox",
+        "message"
+      ],
+      "paragraphs": [
+        "Các tiến trình gửi và nhận thông qua một hộp thư chung. Hộp thư là đối tượng trung gian, nên kiểu này là giao tiếp gián tiếp. Trong giao tiếp trực tiếp, lời gọi thường chỉ rõ tiến trình gửi hoặc nhận."
+      ]
+    },
+    "37": {
+      "terms": [
+        "blockingreceive",
+        "nonblockingreceive",
+        "waiting"
+      ],
+      "paragraphs": [
+        "Nhận có chặn đưa bên nhận vào trạng thái chờ khi chưa có thông điệp. Khi có thông điệp, bên nhận có thể tiếp tục. Nhận không chặn trả quyền điều khiển về ngay để chương trình xử lý kết quả hoặc làm việc khác."
+      ]
+    },
+    "38": {
+      "terms": [
+        "rendezvous",
+        "buffer",
+        "message"
+      ],
+      "paragraphs": [
+        "Sức chứa bằng 0 nghĩa là hệ thống không thể xếp thông điệp vào hàng để giữ hộ. Lần gửi phải gặp lần nhận tương ứng. Bên gửi đợi nếu bên nhận chưa sẵn sàng."
+      ]
+    },
+    "39": {
+      "terms": [
+        "thread",
+        "pc",
+        "registers",
+        "stack"
+      ],
+      "paragraphs": [
+        "Mỗi luồng có đường thực thi riêng, nên cần bộ đếm chương trình riêng để ghi lệnh kế tiếp của mình. Thanh ghi và ngăn xếp cũng là ngữ cảnh riêng. Hai luồng vẫn có thể chia sẻ mã, dữ liệu và tài nguyên của tiến trình."
+      ]
+    },
+    "40": {
+      "terms": [
+        "multithreading",
+        "thread",
+        "responsiveness"
+      ],
+      "paragraphs": [
+        "Luồng xử lý giao diện vẫn nhận thao tác gõ, trong khi luồng ghi tệp có thể đang đợi I/O. Người dùng vẫn thấy ứng dụng phản hồi ngay cả khi công việc nền chưa hoàn tất."
+      ]
+    },
+    "41": {
+      "terms": [
+        "kernel",
+        "kthread",
+        "uthread"
+      ],
+      "paragraphs": [
+        "Nhân hệ điều hành biết và quản lý các luồng mức nhân, nên có thể chọn từng luồng để chạy. Với luồng được quản lý ở mức người dùng, thư viện luồng đảm nhiệm một phần công việc đó."
+      ]
+    },
+    "42": {
+      "terms": [
+        "manyone",
+        "uthread",
+        "kthread"
+      ],
+      "paragraphs": [
+        "Mọi luồng người dùng trong mô hình này đi qua một luồng nhân duy nhất. Hệ điều hành chỉ có một luồng nhân để cấp lên CPU cho nhóm đó, nên các luồng trong nhóm không thể chạy song song trên nhiều lõi."
+      ]
+    },
+    "43": {
+      "terms": [
+        "twolevel",
+        "manymany",
+        "kthread"
+      ],
+      "paragraphs": [
+        "Mô hình hai mức cho nhiều luồng người dùng chia sẻ một nhóm luồng nhân. Khi cần, một luồng người dùng có thể gắn riêng với một luồng nhân. Khả năng gắn riêng là chi tiết phân biệt trong câu hỏi."
+      ]
+    },
+    "44": {
+      "terms": [
+        "cpuburst",
+        "ioburst",
+        "process"
+      ],
+      "paragraphs": [
+        "Tiến trình thường tính toán trên CPU một đoạn, phát yêu cầu vào/ra, rồi chờ. Khi I/O hoàn tất và được cấp lại CPU, nó bước vào đợt tính toán tiếp theo. Một chương trình có thể lặp nhịp này nhiều lần."
+      ]
+    },
+    "45": {
+      "terms": [
+        "preemptive",
+        "timer",
+        "ready"
+      ],
+      "paragraphs": [
+        "Ngắt đồng hồ đưa quyền điều khiển về hệ điều hành. Nếu tiến trình còn có thể chạy nhưng hết lượt, hệ điều hành được quyền thu CPU, đưa nó về Ready và chọn việc khác. Đây là điều phối có trưng dụng."
+      ]
+    },
+    "46": {
+      "terms": [
+        "nonpreemptive",
+        "running",
+        "waiting"
+      ],
+      "paragraphs": [
+        "Khi đã được cấp CPU theo điều phối không trưng dụng, tiến trình giữ CPU đến khi kết thúc hoặc tự chặn để chờ I/O hay sự kiện khác. Lúc đó hệ điều hành mới chọn tiến trình Ready tiếp theo."
+      ]
+    },
+    "47": {
+      "terms": [
+        "fairness",
+        "starvation",
+        "scheduler"
+      ],
+      "paragraphs": [
+        "Tiêu chí công bằng xét cách CPU được chia giữa các tiến trình. Một tiến trình luôn sẵn sàng nhưng bị bỏ qua vô hạn là trường hợp bỏ đói. Thông lượng cao vẫn có thể đi kèm cách chia CPU thiếu công bằng."
+      ]
+    },
+    "48": {
+      "terms": [
+        "throughput",
+        "utilization",
+        "turnaround"
+      ],
+      "paragraphs": [
+        "Thông lượng = số tiến trình hoàn tất / độ dài khoảng quan sát. Chẳng hạn 30 tiến trình trong 10 giây cho 3 tiến trình/giây. Mức sử dụng CPU đo phần thời gian CPU bận, nên là một chỉ số khác."
+      ]
+    },
+    "49": {
+      "terms": [
+        "response",
+        "turnaround"
+      ],
+      "paragraphs": [
+        "Mốc đến chung của hai phép tính là 3 ms.",
+        "Thời gian đáp ứng = mốc phản hồi đầu tiên − mốc đến = 7 − 3 = 4 ms. Thời gian hoàn thành tính từ lúc đến = mốc kết thúc − mốc đến = 15 − 3 = 12 ms."
+      ]
+    },
+    "50": {
+      "terms": [
+        "turnaround",
+        "waittime",
+        "io"
+      ],
+      "paragraphs": [
+        "Turnaround tính toàn bộ thời gian từ lúc tiến trình đến cho tới khi kết thúc. Cộng 2 ms đợi CPU, 5 ms chạy lần đầu, 3 ms đợi I/O và 1 ms chạy tiếp, được 11 ms. Riêng thời gian chờ trong hàng đợi sẵn sàng là 2 ms."
+      ]
+    },
+    "51": {
+      "terms": [
+        "fcfs",
+        "convoy",
+        "cpuburst"
+      ],
+      "paragraphs": [
+        "FCFS cho chạy theo thứ tự vào hàng. P1 đứng đầu và có đợt CPU dài, nên P2 và P3 vẫn phải đợi dù chạy nhanh hơn. Tình huống việc ngắn dồn sau việc dài được gọi là hiệu ứng đoàn xe."
+      ]
+    },
+    "52": {
+      "terms": [
+        "fcfs",
+        "waittime",
+        "gantt"
+      ],
+      "paragraphs": [
+        "Lịch CPU là P1 từ 0–5, P2 từ 5–7, P3 từ 7–11 ms. Cả ba cùng đến lúc 0 nên thời gian chờ lần lượt là 0, 5 và 7 ms.",
+        "Trung bình = (0 + 5 + 7) / 3 = 4 ms."
+      ]
+    },
+    "53": {
+      "terms": [
+        "fcfs",
+        "gantt",
+        "readyqueue"
+      ],
+      "paragraphs": [
+        "P1 đến lúc 0, chạy 3 ms và kết thúc ở mốc 3. P2 chỉ đến ở mốc 5. Trong đoạn từ 3 đến 5, hàng đợi sẵn sàng rỗng nên CPU rảnh 2 ms."
+      ]
+    },
+    "54": {
+      "terms": [
+        "sjf",
+        "cpuburst",
+        "nonpreemptive"
+      ],
+      "paragraphs": [
+        "Cả ba tiến trình đã có mặt lúc đầu. SJF chọn P2 có burst 2 ms, rồi P3 có burst 4 ms, cuối cùng P1 có burst 7 ms. Do không trưng dụng, mỗi tiến trình chạy hết burst đã chọn."
+      ]
+    },
+    "55": {
+      "terms": [
+        "srtf",
+        "preemptive",
+        "cpuburst"
+      ],
+      "paragraphs": [
+        "Đến mốc 2 ms, P1 đã chạy 2 trong 7 ms và còn 5 ms. P2 mới đến cần 3 ms. SRTF so sánh phần còn lại, nên P2 được chạy ngay vì 3 nhỏ hơn 5."
+      ]
+    },
+    "56": {
+      "terms": [
+        "sjf",
+        "prediction",
+        "cpuburst"
+      ],
+      "paragraphs": [
+        "Để chọn việc ngắn nhất, bộ điều phối cần ước lượng độ dài đợt CPU kế tiếp. Hệ điều hành thường chỉ biết thời lượng các đợt đã xảy ra, nên có thể dùng lịch sử làm dữ liệu dự đoán."
+      ]
+    },
+    "57": {
+      "terms": [
+        "priority",
+        "readyqueue"
+      ],
+      "paragraphs": [
+        "Đề cho số nhỏ hơn nghĩa là ưu tiên cao hơn. Thứ tự ưu tiên là P2 (1), P3 (3), P1 (4). Vì cả ba đều sẵn sàng, P2 được chọn trước. Khi làm bài khác, luôn đọc quy ước về số ưu tiên."
+      ]
+    },
+    "58": {
+      "terms": [
+        "aging",
+        "starvation",
+        "priority"
+      ],
+      "paragraphs": [
+        "Nếu việc ưu tiên cao liên tục đến, việc ưu tiên thấp có thể không bao giờ được chạy. Aging tăng dần ưu tiên theo thời gian đã chờ. Nhờ vậy việc chờ lâu có cơ hội vượt lên để được cấp CPU."
+      ]
+    },
+    "59": {
+      "terms": [
+        "rr",
+        "quantum",
+        "readyqueue"
+      ],
+      "paragraphs": [
+        "Khi hết lượng tử thời gian mà chưa xong đợt CPU, tiến trình trả lại CPU và về cuối hàng sẵn sàng. Khi đến lượt tiếp theo, nó tiếp tục phần đã dừng. Nếu đã kết thúc hoặc bị chặn trước lúc hết lượt, nó rời CPU theo trạng thái tương ứng."
+      ]
+    },
+    "60": {
+      "terms": [
+        "rr",
+        "quantum",
+        "switch",
+        "overhead"
+      ],
+      "paragraphs": [
+        "Lượng tử càng ngắn thì hệ thống thường phải chuyển lượt giữa các tiến trình càng nhiều khi có nhiều việc sẵn sàng. Mỗi lần chuyển ngữ cảnh cần lưu và khôi phục trạng thái. Phần thời gian đó là chi phí phụ."
+      ]
+    },
+    "61": {
+      "terms": [
+        "rr",
+        "quantum",
+        "gantt"
+      ],
+      "paragraphs": [
+        "Sau hai lượt đầu, P1 đã chạy 2 ms và P2 đã chạy 2 ms. Lịch là P1 (0–2), P2 (2–4), P1 (4–6), P2 (6–7), P1 (7–8).",
+        "P2 chỉ còn 1 ms ở lượt thứ hai nên kết thúc tại mốc 7 ms."
+      ]
+    },
+    "62": {
+      "terms": [
+        "mlq",
+        "mlfq",
+        "priority"
+      ],
+      "paragraphs": [
+        "Hàng đợi đa mức cố định gán tiến trình vào một nhóm. Hàng đợi hồi tiếp đa mức còn quan sát cách tiến trình dùng CPU để điều chỉnh mức ưu tiên, ví dụ hạ mức khi tiến trình tiêu hết phần thời gian được cấp."
+      ]
+    },
+    "63": {
+      "terms": [
+        "priority",
+        "mlq",
+        "starvation"
+      ],
+      "paragraphs": [
+        "Ưu tiên tuyệt đối chỉ cho hàng thấp chạy khi hàng cao rỗng. Nếu hàng cao có công việc liên tục thì hàng thấp có thể đợi mãi dù vẫn sẵn sàng. Đây là bỏ đói CPU."
+      ]
+    },
+    "64": {
+      "terms": [
+        "mlfq",
+        "quantum",
+        "cpubound"
+      ],
+      "paragraphs": [
+        "Trong quy tắc hồi tiếp được hỏi, tiến trình dùng hết phần thời gian được cấp có thể bị hạ xuống hàng ưu tiên thấp hơn. Ví dụ này mô tả cách bộ điều phối nhận biết công việc thường xuyên chiếm CPU. Chính sách cụ thể có thể khác giữa các bộ điều phối."
+      ]
+    },
+    "65": {
+      "terms": [
+        "smp",
+        "asmp",
+        "scheduler"
+      ],
+      "paragraphs": [
+        "Trong đa xử lý đối xứng, các CPU có thể tự lấy việc theo chính sách điều phối. Hàng đợi có thể dùng chung hoặc tách theo CPU. Điểm cần nhớ là việc lập lịch không dồn toàn bộ vào một bộ xử lý chính như mô hình không đối xứng trong slide."
+      ]
+    },
+    "66": {
+      "terms": [
+        "criticalresource",
+        "criticalsection",
+        "mutex"
+      ],
+      "paragraphs": [
+        "Máy in là đối tượng cần bảo vệ vì chỉ xử lý một công việc tại một thời điểm. Nó là tài nguyên găng. Đoạn găng là phần mã dùng đối tượng đó, chẳng hạn đoạn cần giành quyền trước khi gửi trực tiếp công việc vào thiết bị."
+      ]
+    },
+    "67": {
+      "terms": [
+        "race",
+        "lostupdate",
+        "producer",
+        "consumer"
+      ],
+      "paragraphs": [
+        "Cả hai bên đều tính trên giá trị cũ 5. Bên sản xuất ghi 6, sau đó bên tiêu thụ ghi 4 và đè lượt cập nhật trước.",
+        "Nếu mỗi lần cập nhật hoàn thành tuần tự, một lần tăng và một lần giảm sẽ cho 5. Giá trị 4 là dấu hiệu mất cập nhật."
+      ]
+    },
+    "68": {
+      "terms": [
+        "entry",
+        "criticalsection",
+        "exit",
+        "remainder"
+      ],
+      "paragraphs": [
+        "Phần vào lấy quyền, đoạn găng đọc hoặc sửa dữ liệu dùng chung, phần ra trả quyền, rồi phần còn lại thực hiện công việc khác. Khi đọc mã, tìm đoạn thực sự đụng đến tài nguyên chung để xác định đoạn găng."
+      ]
+    },
+    "69": {
+      "terms": [
+        "mutex",
+        "criticalsection",
+        "criticalresource"
+      ],
+      "paragraphs": [
+        "Loại trừ lẫn nhau yêu cầu tại một thời điểm có nhiều nhất một luồng vào đoạn găng của cùng tài nguyên. Nó cho biết giới hạn truy cập đồng thời. Việc ai vào trước hoặc phải đợi bao lâu thuộc các yêu cầu khác."
+      ]
+    },
+    "70": {
+      "terms": [
+        "progress",
+        "criticalsection",
+        "boundedwaiting"
+      ],
+      "paragraphs": [
+        "Đoạn găng trống và có bên muốn vào là điều kiện để việc chọn người tiếp theo phải tiến triển. Nếu cả nhóm bị hoãn mãi thì yêu cầu tiến triển bị vi phạm. Chờ hữu hạn xét giới hạn số lần một bên có thể bị vượt lượt."
+      ]
+    },
+    "71": {
+      "terms": [
+        "boundedwaiting",
+        "starvation",
+        "progress"
+      ],
+      "paragraphs": [
+        "Sau khi một tiến trình xin vào, phải tồn tại một giới hạn hữu hạn cho số lượt mà các tiến trình khác được vào trước nó. Nhờ giới hạn này, tiến trình không bị bỏ đói dù những bên khác liên tục xin vào."
+      ]
+    },
+    "72": {
+      "terms": [
+        "monitor",
+        "semaphore",
+        "testset"
+      ],
+      "paragraphs": [
+        "Monitor gom dữ liệu dùng chung và các thao tác được phép thành một cấu trúc đồng bộ. Cơ chế vào monitor hỗ trợ loại trừ lẫn nhau, còn biến điều kiện hỗ trợ việc chờ. Theo cách phân nhóm của slide, monitor là công cụ cấp cao."
+      ]
+    },
+    "73": {
+      "terms": [
+        "dekker",
+        "turn",
+        "mutex"
+      ],
+      "paragraphs": [
+        "Mỗi tiến trình dùng cờ để báo có muốn vào đoạn găng. Nếu cả hai đều muốn vào, biến turn chỉ tiến trình có quyền ưu tiên để xử lý tranh chấp. Cờ và biến lượt phối hợp để hai bên không cùng vào."
+      ]
+    },
+    "74": {
+      "terms": [
+        "testset",
+        "atomic",
+        "mutex"
+      ],
+      "paragraphs": [
+        "Test-and-Set đọc giá trị cũ rồi đặt khóa như một thao tác nguyên tử. Hai luồng cùng thử khóa sẽ không thể cùng đọc trạng thái “rảnh” trước khi khóa được đặt. Giá trị cũ cho bên gọi biết nó đã lấy được khóa hay chưa."
+      ]
+    },
+    "75": {
+      "terms": [
+        "testset",
+        "busy",
+        "mutex"
+      ],
+      "paragraphs": [
+        "Tiến trình thực hiện lại thao tác kiểm tra khóa trong một vòng lặp đến khi khóa rảnh. Nó vẫn có thể tiêu tốn thời gian CPU dù chưa làm được công việc hữu ích. Đó là chờ đợi tích cực."
+      ]
+    },
+    "76": {
+      "terms": [
+        "semaphore",
+        "binarysem",
+        "criticalsection"
+      ],
+      "paragraphs": [
+        "Giá trị khởi tạo 1 nghĩa là có một quyền vào đoạn găng. Tiến trình đầu tiên lấy quyền, các tiến trình đến sau phải đợi đến khi quyền được trả. Khởi tạo 0 sẽ khiến bên đầu tiên cũng phải chờ tín hiệu."
+      ]
+    },
+    "77": {
+      "terms": [
+        "waitop",
+        "criticalsection",
+        "signalop"
+      ],
+      "paragraphs": [
+        "Gọi wait(mutex) trước khi truy cập dữ liệu để lấy quyền. Thực hiện đoạn găng khi đã lấy được quyền. Sau khi xong, gọi signal(mutex) để trả quyền cho bên tiếp theo."
+      ]
+    },
+    "78": {
+      "terms": [
+        "semaphore",
+        "block",
+        "wakeup",
+        "busy"
+      ],
+      "paragraphs": [
+        "Nếu chưa có quyền, block() đưa tiến trình vào chờ, cho phép CPU phục vụ việc khác. Khi có tín hiệu trả quyền, wakeup() có thể đánh thức một tiến trình đang đợi. Cách này thay thế vòng lặp kiểm tra liên tục."
+      ]
+    },
+    "79": {
+      "terms": [
+        "readerswriters",
+        "shared",
+        "mutex"
+      ],
+      "paragraphs": [
+        "Nhiều bên đọc có thể xem cùng dữ liệu nếu không có bên ghi. Khi một bên thay đổi dữ liệu, nó cần truy cập độc quyền để tránh cho bên đọc thấy dữ liệu đang cập nhật dở và tránh xung đột giữa các bên ghi."
+      ]
+    },
+    "80": {
+      "terms": [
+        "barrier",
+        "waiting",
+        "process"
+      ],
+      "paragraphs": [
+        "Hàng rào đánh dấu điểm mà một nhóm phải cùng hoàn tất giai đoạn trước. Tiến trình đến sớm dừng tại đó. Khi đủ các tiến trình cần thiết đến, cả nhóm mới được đi tiếp sang giai đoạn sau."
+      ]
+    },
+    "81": {
+      "terms": [
+        "philosophers",
+        "circular",
+        "deadlock"
+      ],
+      "paragraphs": [
+        "Mỗi triết gia đã giữ dĩa trái nhưng cần dĩa phải đang nằm trong tay người kế bên. Các yêu cầu tạo thành một vòng, và không ai có đủ hai dĩa để ăn rồi trả lại. Đây là tình huống chờ vòng tròn gây bế tắc."
+      ]
+    },
+    "82": {
+      "terms": [
+        "monitor",
+        "cv",
+        "cvsignal",
+        "semaphore"
+      ],
+      "paragraphs": [
+        "signal() trên biến điều kiện chỉ tác động lên tiến trình đang chờ biến đó. Nếu hàng đợi rỗng, lời gọi không tích lũy tín hiệu để cho lần wait() sau. Điểm này giúp phân biệt biến điều kiện với cơ chế đếm quyền của semaphore."
+      ]
+    },
+    "83": {
+      "terms": [
+        "request",
+        "allocate",
+        "release"
+      ],
+      "paragraphs": [
+        "Tiến trình trước tiên gửi yêu cầu và chờ nếu tài nguyên chưa có sẵn. Sau khi được cấp, nó sử dụng tài nguyên để làm việc. Khi xong, nó giải phóng để tài nguyên có thể được cấp cho việc khác."
+      ]
+    },
+    "84": {
+      "terms": [
+        "deadlock",
+        "holdwait",
+        "circular",
+        "nopreempt"
+      ],
+      "paragraphs": [
+        "P1 chỉ tiếp tục nếu có R2, nhưng R2 do P2 giữ. P2 chỉ tiếp tục nếu có R1, nhưng R1 do P1 giữ. Với mỗi loại chỉ có một đơn vị và không thể thu hồi, hai bên tự chặn nhau thành bế tắc."
+      ]
+    },
+    "85": {
+      "terms": [
+        "mutex",
+        "holdwait",
+        "nopreempt",
+        "circular"
+      ],
+      "paragraphs": [
+        "Bốn điều kiện cần cùng tồn tại để bế tắc có thể xảy ra.",
+        "1. Loại trừ lẫn nhau: có tài nguyên chỉ một bên dùng được. 2. Giữ và chờ: bên đang giữ tài nguyên xin thêm. 3. Không trưng dụng: tài nguyên không thể bị thu hồi cưỡng bức. 4. Chờ vòng tròn: mỗi bên đợi tài nguyên bên tiếp theo đang giữ."
+      ]
+    },
+    "86": {
+      "terms": [
+        "holdwait",
+        "request",
+        "allocate"
+      ],
+      "paragraphs": [
+        "Tiến trình đang giữ A nhưng vẫn tiếp tục chờ được cấp B. Đó là điều kiện giữ và chờ. Để kết luận có vòng chờ, còn phải xem ai đang giữ B và người đó chờ tài nguyên nào."
+      ]
+    },
+    "87": {
+      "terms": [
+        "rag",
+        "requestedge",
+        "assignmentedge"
+      ],
+      "paragraphs": [
+        "Đọc cung theo hướng mũi tên. Pi → Rj nghĩa là tiến trình Pi xin một đơn vị thuộc loại Rj. Cung ngược Rj → Pi xuất phát từ đơn vị tài nguyên đã được cấp cho Pi."
+      ]
+    },
+    "88": {
+      "terms": [
+        "rag",
+        "assignmentedge",
+        "release"
+      ],
+      "paragraphs": [
+        "Cung Rj → Pi biểu thị đơn vị tài nguyên đang thuộc về Pi. Khi Pi trả lại đơn vị đó, xóa cung cấp phát tương ứng. Các cung khác biểu diễn những yêu cầu hoặc lượt cấp phát vẫn còn."
+      ]
+    },
+    "89": {
+      "terms": [
+        "rag",
+        "cycle",
+        "deadlock"
+      ],
+      "paragraphs": [
+        "Nếu mỗi loại tài nguyên chỉ có một đơn vị, chu trình trong đồ thị cấp phát là dấu hiệu đủ để kết luận bế tắc. Với loại tài nguyên có nhiều đơn vị, một đơn vị khác có thể được giải phóng và phá vòng chờ. Vì vậy trong đề này cần kiểm tra thêm."
+      ]
+    },
+    "90": {
+      "terms": [
+        "prevention",
+        "ordering",
+        "circular"
+      ],
+      "paragraphs": [
+        "Gán cho mọi loại tài nguyên một thứ tự chung. Nếu mỗi tiến trình chỉ xin theo chiều tăng, chuỗi phụ thuộc cũng phải tăng và không thể quay về đầu thành vòng. Quy tắc này phá điều kiện chờ vòng tròn, nên thuộc phòng ngừa bế tắc."
+      ]
+    },
+    "91": {
+      "terms": [
+        "prevention",
+        "holdwait",
+        "request"
+      ],
+      "paragraphs": [
+        "Tiến trình chỉ bắt đầu khi đã lấy được toàn bộ tài nguyên cần dùng. Trong khi đang chờ được cấp, nó chưa giữ một phần tài nguyên để rồi tiếp tục xin phần còn lại. Quy tắc nhắm vào điều kiện giữ và chờ."
+      ]
+    },
+    "92": {
+      "terms": [
+        "cpu",
+        "preemption",
+        "switch"
+      ],
+      "paragraphs": [
+        "Khi thu lại CPU, hệ điều hành có thể lưu ngữ cảnh thực thi và khôi phục cho tiến trình ở lượt sau. Với thiết bị đang thực hiện thao tác khó đảo ngược như in một dòng giấy, lưu và phục hồi trạng thái sử dụng thường khó hơn."
+      ]
+    },
+    "93": {
+      "terms": [
+        "safe",
+        "sequence",
+        "banker"
+      ],
+      "paragraphs": [
+        "Một trạng thái an toàn có ít nhất một thứ tự mà trong đó từng tiến trình có thể nhận phần còn thiếu, chạy xong rồi trả tài nguyên. Tài nguyên vừa trả được dùng tiếp cho những tiến trình nằm sau trong thứ tự. Chuỗi này là chứng cứ kiểm tra trạng thái."
+      ]
+    },
+    "94": {
+      "terms": [
+        "unsafe",
+        "sequence",
+        "deadlock"
+      ],
+      "paragraphs": [
+        "Không tìm được chuỗi an toàn nghĩa là không bảo đảm có thứ tự cho tất cả tiến trình hoàn tất nếu chúng đòi đến mức tối đa đã khai báo. Bế tắc là trạng thái các bên đã chờ nhau. Hệ thống không an toàn có nguy cơ rơi vào bế tắc tùy các yêu cầu tiếp theo."
+      ]
+    },
+    "95": {
+      "terms": [
+        "rag",
+        "claim",
+        "requestedge",
+        "avoidance"
+      ],
+      "paragraphs": [
+        "Nét đứt là cung đòi hỏi trước: Pi có thể xin Rj trong tương lai. Khi Pi thực sự xin, cung đó trở thành cung yêu cầu. Việc ghi trước các khả năng xin giúp hệ thống xét xem cấp ngay có làm mất trạng thái an toàn hay không."
+      ]
+    },
+    "96": {
+      "terms": [
+        "banker",
+        "max",
+        "allocation",
+        "need"
+      ],
+      "paragraphs": [
+        "Banker lưu mức tối đa, số đã cấp và phần tối đa còn có thể cần theo từng loại tài nguyên.",
+        "Need = Max − Allocation = (6 − 2, 4 − 3) = (4, 1). So sánh và tính theo từng thành phần, giữ nguyên thứ tự của hai loại tài nguyên."
+      ]
+    },
+    "97": {
+      "terms": [
+        "work",
+        "need",
+        "allocation",
+        "sequence"
+      ],
+      "paragraphs": [
+        "Kiểm tra từng cột: Need = (2, 1) ≤ Work = (2, 1), nên có thể giả lập P1 chạy xong.",
+        "Khi đó P1 trả phần đang được cấp. Work mới = (2, 1) + (1, 3) = (3, 4)."
+      ]
+    },
+    "98": {
+      "terms": [
+        "banker",
+        "requestvector",
+        "need",
+        "available"
+      ],
+      "paragraphs": [
+        "Bước đầu kiểm tra Request ≤ Need theo từng cột. Cột thứ hai xin 3 đơn vị nhưng chỉ còn được xin tối đa 2, nên yêu cầu vượt mức khai báo.",
+        "Available = (5, 5) cho biết lượng còn rảnh, nhưng chưa cần xét đến bước đó trong câu này."
+      ]
+    },
+    "99": {
+      "terms": [
+        "detection",
+        "requestvector",
+        "work",
+        "need"
+      ],
+      "paragraphs": [
+        "Phát hiện bế tắc so yêu cầu hiện tại Request với Work để xét tiến trình nào có thể đi tiếp và trả tài nguyên. Kiểm tra an toàn của Banker dùng Need vì phải tính khả năng tiến trình đòi tới mức tối đa đã khai báo."
+      ]
+    },
+    "100": {
+      "terms": [
+        "recovery",
+        "processtermination",
+        "preemption"
+      ],
+      "paragraphs": [
+        "Sau khi xác định đã bế tắc, hệ thống có thể hủy một hoặc nhiều tiến trình để chúng trả tài nguyên. Hướng còn lại là trưng dụng tài nguyên từ tiến trình được chọn nếu có thể thu hồi an toàn, rồi cấp cho tiến trình khác để phá vòng chờ."
+      ]
+    },
+    "101": {
+      "terms": [
+        "os",
+        "hardware",
+        "abstraction",
+        "vm"
+      ],
+      "paragraphs": [
+        "Cụm “bao trùm lên máy tính vật lý” mô tả cách hệ điều hành trình bày một máy logic dễ khai thác hơn. Người dùng chương trình thấy các đối tượng như tệp và tiến trình, dù bên dưới là các thiết bị vật lý. Đây là cách nhìn của nhà kỹ thuật trong C1."
+      ]
+    },
+    "102": {
+      "terms": [
+        "syscall",
+        "process",
+        "kernel"
+      ],
+      "paragraphs": [
+        "Trong cách diễn đạt của slide C1, một tiến trình đang thực thi dùng lời gọi hệ thống để yêu cầu nhân làm việc thay nó. Ví dụ, tiến trình muốn đọc tệp có thể gọi dịch vụ đọc. Thuật ngữ “tiến trình” nêu rõ thực thể đang chạy gửi yêu cầu."
+      ]
+    },
+    "103": {
+      "terms": [
+        "dispatcher",
+        "scheduler",
+        "switch"
+      ],
+      "paragraphs": [
+        "Bộ điều phối quyết định tiến trình nào chạy tiếp. Bộ phân phối chuyển giao CPU cho tiến trình được chọn, gồm những thao tác như lưu ngữ cảnh cũ và nạp ngữ cảnh mới. Đề hỏi thành phần thực hiện việc trao CPU, nên chọn bộ phân phối."
+      ]
+    },
+    "104": {
+      "terms": [
+        "prevention",
+        "mutex",
+        "criticalresource",
+        "deadlock"
+      ],
+      "paragraphs": [
+        "Hệ thống có thể phòng ngừa bế tắc bằng cách phá ít nhất một điều kiện cần. Với thiết bị vốn chỉ phục vụ một công việc tại mỗi thời điểm, ví dụ máy in, khó bỏ yêu cầu dùng độc quyền. Các chính sách xin tài nguyên theo thứ tự có thể phá điều kiện khác."
+      ]
+    },
+    "105": {
+      "terms": [
+        "process",
+        "ipc",
+        "preemptive"
+      ],
+      "paragraphs": [
+        "Nhận định (A) khớp với định nghĩa tiến trình là chương trình đang thực thi.",
+        "Nhận định (B) bỏ qua vai trò của hệ điều hành trong việc cung cấp cơ chế trao đổi giữa các tiến trình. Nhận định (C) dùng từ “luôn”, trong khi điều phối có trưng dụng cho phép hệ điều hành thu hồi CPU ngay cả khi tiến trình chưa tự nhường."
+      ]
+    },
+    "106": {
+      "terms": [
+        "overlay",
+        "swapping",
+        "address"
+      ],
+      "paragraphs": [
+        "Overlay chia chương trình thành các phần dùng vào các thời điểm khác nhau. Các phần có thể lần lượt nạp vào cùng vùng nhớ, nhờ vậy chương trình có thể có kích thước lớn hơn phần vùng nhớ dành cho nó.",
+        "Swapping trong slide chuyển tiến trình ra khỏi bộ nhớ rồi đưa trở lại. Dấu hiệu “chia chương trình thành nhiều phần” dẫn đến Overlay."
+      ]
+    },
+    "107": {
+      "terms": [
+        "banker",
+        "avoidance",
+        "safe",
+        "prevention"
+      ],
+      "paragraphs": [
+        "Banker giả lập việc cấp thêm và kiểm tra còn chuỗi an toàn hay không. Nếu cấp xong mà hệ thống không còn an toàn, yêu cầu phải chờ. Cách này là phòng tránh vì xét trạng thái trước khi cấp. Phòng ngừa dùng quy tắc để phá một điều kiện cần của bế tắc."
+      ]
+    },
+    "108": {
+      "terms": [
+        "thread",
+        "global",
+        "openfile",
+        "stack",
+        "pc"
+      ],
+      "paragraphs": [
+        "Các luồng cùng tiến trình chia sẻ vùng dữ liệu, gồm biến toàn cục, và tài nguyên như tập tin đang mở. Mỗi luồng giữ bộ đếm chương trình, thanh ghi và ngăn xếp riêng để tiếp tục đúng chỗ.",
+        "Phương án đúng bao gồm cả hai mục dùng chung. Khi đảo phương án, chữ cái có thể đổi nhưng hai nội dung đó giữ nguyên."
+      ]
+    },
+    "109": {
+      "terms": [
+        "scheduler",
+        "dispatcher",
+        "fairness",
+        "readyqueue"
+      ],
+      "paragraphs": [
+        "Bộ điều phối chọn tiến trình tiếp theo từ hàng đợi sẵn sàng. Chính sách mà nó áp dụng quyết định cách chia lượt CPU và mức công bằng. Bộ phân phối thực hiện việc trao CPU sau khi đã có lựa chọn."
+      ]
+    },
+    "110": {
+      "terms": [
+        "fcfs",
+        "cpuburst",
+        "waittime",
+        "gantt"
+      ],
+      "paragraphs": [
+        "Cả ba tiến trình đến lúc 0 và chạy theo thứ tự vào hàng. P1 chạy từ 0–24, P2 từ 24–27 và P3 từ 27–30. Mỗi thời gian chờ bằng lúc bắt đầu chạy trừ lúc đến.",
+        "Thời gian chờ lần lượt là 0, 24 và 27. Trung bình = (0 + 24 + 27) / 3 = 17."
+      ]
+    }
+  }
+}

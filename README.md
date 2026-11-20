@@ -2,7 +2,7 @@
 
 [Luyện 110 câu trên GitHub Pages](https://nguyenkhanhtv12345ko-lang.github.io/luyen-tap-he-dieu-hanh/).
 
-Bộ câu hỏi được trích từ **110_cau_trac_nghiem_He_dieu_hanh_C1_C2.docx** theo thứ tự tài liệu. Mỗi câu có bốn lựa chọn và lấy đáp án từ phần tô vàng. 100 câu đầu thuộc bộ ôn tập C1/C2. Câu 101–110 là phần mini game đã biên tập trong Word. Sau khi chấm, trang hiện ghi chú và trang PDF đối chiếu của Word ngay dưới đáp án.
+Bộ câu hỏi được trích từ **110_cau_trac_nghiem_He_dieu_hanh_C1_C2.docx** theo thứ tự tài liệu. Mỗi câu có bốn lựa chọn và lấy đáp án từ phần tô vàng. 100 câu đầu thuộc bộ ôn tập C1/C2. Câu 101–110 là phần mini game đã biên tập trong Word. Sau khi chấm, trang hiện phần giải thích chi tiết và danh sách thuật ngữ Việt–Anh ngay dưới đáp án. Mục “Đối chiếu tài liệu” chứa ghi chú và số trang PDF lấy từ Word.
 
 | Bộ | Câu gốc |
 | --- | --- |
@@ -14,6 +14,8 @@ Bộ câu hỏi được trích từ **110_cau_trac_nghiem_He_dieu_hanh_C1_C2.do
 Có thể đảo câu hỏi, phương án hoặc cả hai. Trang chấm bằng ID của nội dung đáp án. Phương án tổng hợp giữ vị trí khi cần. Câu 105 giữ thứ tự vì đáp án gọi tên nhận định A, B, C. Câu 108 cập nhật chữ cái của hai mục được nhắc trong phương án tổng hợp.
 
 Trang lưu thứ tự, vị trí, câu đã làm và các câu đánh dấu trên cùng trình duyệt.
+
+Dữ liệu giải thích được lưu riêng trong `study-notes.json`, theo ID câu gốc để giữ đúng nội dung khi đảo câu. Thuật ngữ dùng chung được khai báo một lần trong mục `terms`. Tham khảo thêm [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) và [tài liệu DMA của Linux](https://docs.kernel.org/core-api/dma-api-howto.html).
 
 ## Chạy và kiểm tra
 

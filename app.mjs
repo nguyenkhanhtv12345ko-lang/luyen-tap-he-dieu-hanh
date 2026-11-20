@@ -5,7 +5,7 @@ const storageKey = "he-dieu-hanh-110/v1";
 const sourceName = run => (run.set === "all" ? "Toàn bộ " : "Đề " + run.set + " · ") + run.ids.length + " câu";
 const modeNames = { original: "Nguyên bản", questions: "Đảo câu hỏi", options: "Đảo phương án", both: "Đảo cả hai" };
 const stateLabels = { right: "đúng", wrong: "sai", pending: "chưa làm", ungraded: "chưa có đáp án xác nhận" };
-let bank, map, saved, pendingAction;
+let bank, map, saved, pendingAction, studyNotes;
 let selection = null;
 
 const questionCard = byId("question");
@@ -104,9 +104,43 @@ function renderQuestion() {
     feedback.append(textNode("span", correct.length
       ? "Đáp án đúng là " + correct.map(option => option.letter + ". " + option.text).join(" / ")
       : "Tài liệu chưa xác định đáp án đúng."));
-    if (question.explanation) {
-      feedback.append(textNode("p", question.explanation, "explanation"));
+  }
+  renderStudyNotes(question, Boolean(answer));
+}
+
+function renderStudyNotes(question, answered) {
+  const section = byId("study-notes");
+  const note = studyNotes?.questions[question.id];
+  section.replaceChildren();
+  section.hidden = !answered || (!note && !question.explanation);
+  if (section.hidden) return;
+
+  const heading = textNode("h2", "Giải thích chi tiết");
+  heading.id = "study-notes-title";
+  section.append(heading);
+  for (const paragraph of note?.paragraphs ?? []) {
+    section.append(textNode("p", paragraph, "study-text"));
+  }
+
+  const terms = (note?.terms ?? []).map(key => studyNotes.terms[key]).filter(Boolean);
+  if (terms.length) {
+    section.append(textNode("h3", "Chú thích thuật ngữ"));
+    const list = textNode("ol", "", "study-terms");
+    for (const term of terms) {
+      const item = textNode("li", "");
+      const english = textNode("span", "(" + term.en + ")", "term-english");
+      english.lang = "en";
+      item.append(textNode("strong", term.vi), " ", english);
+      list.append(item);
     }
+    section.append(list);
+  }
+
+  if (question.explanation) {
+    const source = textNode("details", "", "study-source");
+    source.append(textNode("summary", "Đối chiếu tài liệu"), textNode("p", question.explanation));
+    source.open = !note;
+    section.append(source);
   }
 }
 
@@ -334,9 +368,14 @@ function onShortcut(event) {
 
 async function boot() {
   try {
+    const notesReady = fetch(new URL("./study-notes.json", import.meta.url))
+      .then(response => response.ok ? response.json() : null)
+      .catch(() => null);
     const response = await fetch(new URL("./questions.json", import.meta.url));
     if (!response.ok) throw new Error("Không tải được dữ liệu câu hỏi.");
     bank = await response.json();
+    const notes = await notesReady;
+    studyNotes = notes?.questions && notes?.terms ? notes : null;
     if (bank.length !== questionCount) throw new Error("Thiếu dữ liệu câu hỏi.");
     map = new Map(bank.map(question => [question.id, question]));
     saved = restoreOrStart();

@@ -63,7 +63,17 @@ h1 { font-size: clamp(20px, 1.5rem, 24px); font-weight: 750; letter-spacing: -.0
 .feedback[data-result=right] { background: var(--green-bg); color: var(--green); }
 .feedback[data-result=wrong] { background: var(--red-bg); color: var(--red); }
 .feedback strong { display: block; }
-.explanation { font-size: 13px; margin: 7px 0 0; border-top: 1px solid currentColor; padding-top: 7px; }
+.study-notes { margin-top: 12px; padding: 15px; border: 1px solid var(--border); border-radius: 12px; background: #faf8fe; overflow-wrap: anywhere; }
+.study-notes h2 { font-size: 16px; color: #35275f; }
+.study-notes h3 { font-size: 14px; color: #35275f; margin: 14px 0 6px; }
+.study-text { margin: 8px 0 0; font-size: 14px; line-height: 1.6; }
+.study-terms { margin: 0; padding-left: 23px; color: var(--ink); font-size: 14px; line-height: 1.55; }
+.study-terms li + li { margin-top: 4px; }
+.study-terms li::marker { color: var(--purple); font-weight: 700; }
+.term-english { color: var(--muted); }
+.study-source { border-top: 1px solid var(--border); margin-top: 12px; color: var(--muted); font-size: 13px; }
+.study-source summary { display: list-item; padding: 12px 0 8px; min-height: 44px; line-height: 24px; color: var(--purple); cursor: pointer; font-weight: 650; }
+.study-source p { margin: 0; line-height: 1.55; }
 .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; border-top: 1px solid var(--border); margin-top: 22px; padding-top: 17px; }
 #previous { justify-self: start; }
 #next { justify-self: end; }
