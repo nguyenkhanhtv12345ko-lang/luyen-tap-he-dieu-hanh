@@ -137,9 +137,8 @@ function renderStudyNotes(question, answered) {
   }
 
   if (question.explanation) {
-    const source = textNode("details", "", "study-source");
-    source.append(textNode("summary", "Đối chiếu tài liệu"), textNode("p", question.explanation));
-    source.open = !note;
+    const source = textNode("div", "", "study-source");
+    source.append(textNode("h3", "Đối chiếu tài liệu"), textNode("p", question.explanation));
     section.append(source);
   }
 }

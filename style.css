@@ -72,7 +72,7 @@ h1 { font-size: clamp(20px, 1.5rem, 24px); font-weight: 750; letter-spacing: -.0
 .study-terms li::marker { color: var(--purple); font-weight: 700; }
 .term-english { color: var(--muted); }
 .study-source { border-top: 1px solid var(--border); margin-top: 12px; color: var(--muted); font-size: 13px; }
-.study-source summary { display: list-item; padding: 12px 0 8px; min-height: 44px; line-height: 24px; color: var(--purple); cursor: pointer; font-weight: 650; }
+.study-source h3 { margin: 10px 0 5px; }
 .study-source p { margin: 0; line-height: 1.55; }
 .controls { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; border-top: 1px solid var(--border); margin-top: 22px; padding-top: 17px; }
 #previous { justify-self: start; }
