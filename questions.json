@@ -1,0 +1,2879 @@
+[
+  {
+    "id": 1,
+    "text": "Hệ điều hành nằm ở đâu trong mô hình phân lớp của hệ thống máy tính?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bên trong từng chương trình ứng dụng"
+      },
+      {
+        "id": "B",
+        "text": "Bên dưới các thiết bị vật lý"
+      },
+      {
+        "id": "C",
+        "text": "Giữa người dùng và tài liệu của ứng dụng"
+      },
+      {
+        "id": "D",
+        "text": "Giữa phần cứng và chương trình ứng dụng"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §1.1, tr. 9–10. Sơ đồ lớp đặt hệ điều hành trên phần cứng và dưới ứng dụng.  [Dạng đề UCE]"
+  },
+  {
+    "id": 2,
+    "text": "Khi hệ điều hành che giấu cách điều khiển thiết bị để chương trình dễ sử dụng hơn, nó thể hiện vai trò nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tăng số bộ xử lý vật lý"
+      },
+      {
+        "id": "B",
+        "text": "Cung cấp một máy tính ảo ở mức trừu tượng"
+      },
+      {
+        "id": "C",
+        "text": "Kiểm tra chuỗi an toàn"
+      },
+      {
+        "id": "D",
+        "text": "Điều phối công việc dài hạn"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §1.2, tr. 12–13. Giao diện trừu tượng giúp chương trình khai thác phần cứng mà ít phải biết chi tiết thiết bị."
+  },
+  {
+    "id": 3,
+    "text": "Hai ứng dụng cùng xin dùng một máy in. Quyết định ứng dụng nào được dùng trước thuộc chức năng nào của hệ điều hành?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quản lý tài nguyên và giải quyết tranh chấp"
+      },
+      {
+        "id": "B",
+        "text": "Dịch mã nguồn thành mã máy"
+      },
+      {
+        "id": "C",
+        "text": "Tạo thêm máy in vật lý"
+      },
+      {
+        "id": "D",
+        "text": "Xác định thời hạn của hệ thống thời gian thực"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §1.2, tr. 15. Máy in là tài nguyên cần cấp phát theo thứ tự."
+  },
+  {
+    "id": 4,
+    "text": "Trong giai đoạn xử lý theo lô, thao tác viên làm gì trước khi máy chạy các chương trình?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Sắp các chương trình theo deadline"
+      },
+      {
+        "id": "B",
+        "text": "Đặt một lát thời gian cho từng phiên tương tác"
+      },
+      {
+        "id": "C",
+        "text": "Tạo một máy ảo cho mỗi lệnh"
+      },
+      {
+        "id": "D",
+        "text": "Tập hợp chương trình thành lô để đưa vào xử lý"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §2.2, tr. 27. Slide mô tả thao tác viên nhận chương trình rồi gom thành batch."
+  },
+  {
+    "id": 5,
+    "text": "Chữ viết tắt DMA trên slide lịch sử có nghĩa gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Device Management Algorithm"
+      },
+      {
+        "id": "B",
+        "text": "Direct Memory Access"
+      },
+      {
+        "id": "C",
+        "text": "Dynamic Memory Allocation"
+      },
+      {
+        "id": "D",
+        "text": "Distributed Message Access"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §2.2, tr. 28. DMA là cơ chế truy nhập bộ nhớ trực tiếp."
+  },
+  {
+    "id": 6,
+    "text": "Xét từ góc nhìn người quản lý, định nghĩa hệ điều hành nhấn mạnh điều gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quản lý chặt chẽ và sử dụng tối ưu tài nguyên"
+      },
+      {
+        "id": "B",
+        "text": "Biên dịch chương trình sang nhiều ngôn ngữ"
+      },
+      {
+        "id": "C",
+        "text": "Thiết kế giao diện cho từng ứng dụng"
+      },
+      {
+        "id": "D",
+        "text": "Kéo dài thời hạn của mọi công việc"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.1, tr. 40. Slide phân biệt góc nhìn quản lý tài nguyên với góc nhìn người sử dụng và kỹ thuật."
+  },
+  {
+    "id": 7,
+    "text": "Trong sáu nhóm hệ thống của slide, nhóm nào tự động chuyển sang chương trình tiếp theo sau khi chương trình hiện tại kết thúc?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Phân tán"
+      },
+      {
+        "id": "B",
+        "text": "Xử lý theo lô đơn chương trình"
+      },
+      {
+        "id": "C",
+        "text": "Phân chia thời gian"
+      },
+      {
+        "id": "D",
+        "text": "Xử lý theo lô đa chương trình"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.2, tr. 43–44. Mô hình lô đơn chương trình thực hiện lần lượt từng chương trình."
+  },
+  {
+    "id": 8,
+    "text": "Một công việc đang chờ I/O. Hệ xử lý theo lô đa chương trình dùng CPU hiệu quả hơn bằng cách nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đưa mọi tiến trình sẵn sàng về trạng thái kết thúc"
+      },
+      {
+        "id": "B",
+        "text": "Giữ CPU rảnh đến khi I/O xong"
+      },
+      {
+        "id": "C",
+        "text": "Chuyển tất cả công việc thành tác vụ thời gian thực"
+      },
+      {
+        "id": "D",
+        "text": "Cho một tiến trình sẵn sàng khác chạy"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.2, tr. 45. CPU có thể chuyển sang việc khác trong lúc một công việc chờ I/O.  [Dạng đề MGU]"
+  },
+  {
+    "id": 9,
+    "text": "Cơ chế nào tạo cảm giác nhiều phiên tương tác chạy đồng thời trên một bộ xử lý?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chia thời gian CPU cho các tiến trình sẵn sàng"
+      },
+      {
+        "id": "B",
+        "text": "Chờ từng tiến trình kết thúc rồi mới nhận phiên mới"
+      },
+      {
+        "id": "C",
+        "text": "Gộp mọi phiên thành một lời gọi hệ thống"
+      },
+      {
+        "id": "D",
+        "text": "Cấp mỗi người một bộ nhớ vật lý và ngừng luân phiên CPU"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.2, tr. 46. Time-sharing luân phiên CPU giữa các tiến trình."
+  },
+  {
+    "id": 10,
+    "text": "Mô hình đa xử lý nào giao quyền kiểm soát hệ thống cho một bộ xử lý chính?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Xử lý theo lô đơn chương trình"
+      },
+      {
+        "id": "B",
+        "text": "Phân chia thời gian"
+      },
+      {
+        "id": "C",
+        "text": "Đa xử lý đối xứng (SMP)"
+      },
+      {
+        "id": "D",
+        "text": "Đa xử lý không đối xứng (ASMP)"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.2, tr. 47–48. Trong ASMP, bộ xử lý chính điều khiển hoặc giao nhiệm vụ cho các bộ xử lý khác."
+  },
+  {
+    "id": 11,
+    "text": "Dấu hiệu nào đặc trưng cho hệ thống phân tán theo slide?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tất cả chương trình được xử lý thành một lô duy nhất"
+      },
+      {
+        "id": "B",
+        "text": "Mỗi tiến trình chỉ hoạt động trong một lát CPU cố định"
+      },
+      {
+        "id": "C",
+        "text": "Các bộ xử lý có bộ nhớ cục bộ và trao đổi qua đường truyền"
+      },
+      {
+        "id": "D",
+        "text": "Mọi bộ xử lý phải dùng một bộ nhớ vật lý chung"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.2, tr. 49. Các thành phần trao đổi thông tin qua mạng hoặc đường truyền thông."
+  },
+  {
+    "id": 12,
+    "text": "Một hệ thống điều khiển chỉ đạt yêu cầu khi kết quả đúng và có trước hạn định. Đây là hệ thống gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hệ thống theo lô đơn chương trình"
+      },
+      {
+        "id": "B",
+        "text": "Hệ thống máy ảo"
+      },
+      {
+        "id": "C",
+        "text": "Hệ thống phân chia thời gian"
+      },
+      {
+        "id": "D",
+        "text": "Hệ thống thời gian thực (real-time system)"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.2, tr. 50. Yêu cầu về thời điểm trả kết quả là dấu hiệu của xử lý thời gian thực.  [Dạng đề MGU]"
+  },
+  {
+    "id": 13,
+    "text": "Tính chất nào yêu cầu thông báo của hệ điều hành chính xác và lỗi phải được xử lý phù hợp?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiệu quả sử dụng CPU"
+      },
+      {
+        "id": "B",
+        "text": "Tính thuận tiện"
+      },
+      {
+        "id": "C",
+        "text": "Tính kế thừa"
+      },
+      {
+        "id": "D",
+        "text": "Độ tin cậy"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §4, tr. 52–54. Slide gắn thông tin chuẩn xác và phản ứng khi gặp lỗi với độ tin cậy."
+  },
+  {
+    "id": 14,
+    "text": "Việc hạn chế sửa dữ liệu ngoài ý muốn và ngăn truy cập trái phép thuộc tính chất nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hiệu quả"
+      },
+      {
+        "id": "B",
+        "text": "Tổng quát theo thời gian"
+      },
+      {
+        "id": "C",
+        "text": "An toàn"
+      },
+      {
+        "id": "D",
+        "text": "Thuận tiện"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §4, tr. 56. Mục an toàn đề cập bảo vệ dữ liệu và chương trình."
+  },
+  {
+    "id": 15,
+    "text": "Theo phân loại vật lý và logic, biến nhớ thuộc nhóm nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tài nguyên chỉ dùng được bởi một bộ xử lý"
+      },
+      {
+        "id": "B",
+        "text": "Thiết bị vật lý"
+      },
+      {
+        "id": "C",
+        "text": "Đơn vị dịch vụ lưu trữ phụ"
+      },
+      {
+        "id": "D",
+        "text": "Tài nguyên logic"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §5.2, tr. 70–71. Slide lấy biến nhớ làm ví dụ của tài nguyên logic."
+  },
+  {
+    "id": 16,
+    "text": "Theo khả năng dùng chung trong slide, CPU là ví dụ cho nhóm tài nguyên nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Có thể phân chia theo lượt sử dụng"
+      },
+      {
+        "id": "B",
+        "text": "Dùng chung đồng thời giống mọi vùng nhớ"
+      },
+      {
+        "id": "C",
+        "text": "Mỗi tiến trình giữ riêng trong suốt vòng đời"
+      },
+      {
+        "id": "D",
+        "text": "Chỉ tồn tại dưới dạng tài nguyên ảo"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §5.2, tr. 71. Slide xếp bộ xử lý vào nhóm có thể cấp lần lượt theo thời gian."
+  },
+  {
+    "id": 17,
+    "text": "Người dùng nhập lệnh. Thành phần nào nhận, phân tích và tổ chức thực hiện lệnh đó?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đèn báo (semaphore)"
+      },
+      {
+        "id": "B",
+        "text": "Bộ xử lý lệnh (shell)"
+      },
+      {
+        "id": "C",
+        "text": "Khối điều khiển tiến trình (PCB)"
+      },
+      {
+        "id": "D",
+        "text": "Bộ phân phối CPU (dispatcher)"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §5.3, tr. 74–75. Shell là giao diện xử lý lệnh giữa người dùng và hệ điều hành.  [Dạng đề MGU]"
+  },
+  {
+    "id": 18,
+    "text": "Buffering, caching và spooling được nhắc trong thành phần nào của hệ điều hành?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quản lý tiến trình"
+      },
+      {
+        "id": "B",
+        "text": "Giao diện người dùng"
+      },
+      {
+        "id": "C",
+        "text": "Hệ thống bảo vệ"
+      },
+      {
+        "id": "D",
+        "text": "Quản lý hệ thống vào ra"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §6.1, tr. 84. Slide đặt cả ba kỹ thuật trong phần quản lý bộ nhớ của hệ thống I/O."
+  },
+  {
+    "id": 19,
+    "text": "Dịch vụ nào được xếp vào nhóm giúp hệ thống vận hành hiệu quả?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đọc và ghi tập tin theo yêu cầu ứng dụng"
+      },
+      {
+        "id": "B",
+        "text": "Truyền dữ liệu giữa các tiến trình"
+      },
+      {
+        "id": "C",
+        "text": "Cấp phát tài nguyên cho nhiều công việc"
+      },
+      {
+        "id": "D",
+        "text": "Nạp và thi hành chương trình người dùng"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §6.2, tr. 92–93. Slide đặt cấp phát tài nguyên ở nhóm phục vụ vận hành hệ thống."
+  },
+  {
+    "id": 20,
+    "text": "Tạo, xóa, đọc và ghi tập tin thuộc nhóm lời gọi hệ thống nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Quản lý tập tin"
+      },
+      {
+        "id": "B",
+        "text": "Quản lý bộ nhớ"
+      },
+      {
+        "id": "C",
+        "text": "Quản lý thiết bị vào ra"
+      },
+      {
+        "id": "D",
+        "text": "Quản lý tiến trình"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §6.3, tr. 95–96. Slide đặt các thao tác này trong nhóm quản lý file.  [Dạng đề MGU, UCE]"
+  },
+  {
+    "id": 21,
+    "text": "Một tệp thực thi nằm trên đĩa, chưa được chạy. Theo bài giảng, nó là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chương trình, một thực thể thụ động"
+      },
+      {
+        "id": "B",
+        "text": "Tiến trình đang ở trạng thái Waiting"
+      },
+      {
+        "id": "C",
+        "text": "Tiến trình đang ở trạng thái Ready"
+      },
+      {
+        "id": "D",
+        "text": "Luồng mức nhân"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.1, tr. 8–10. Tiến trình là một lần thực thi chương trình với ngữ cảnh và tài nguyên.  [Dạng đề UCE]"
+  },
+  {
+    "id": 22,
+    "text": "Hai người dùng chạy cùng một tệp thực thi với dữ liệu khác nhau. Điều gì có thể xảy ra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Một chương trình tạo ra hai tiến trình riêng"
+      },
+      {
+        "id": "B",
+        "text": "Cả hai lần chạy phải dùng một bộ đếm lệnh"
+      },
+      {
+        "id": "C",
+        "text": "Mỗi tệp thực thi chỉ có thể chạy một lần"
+      },
+      {
+        "id": "D",
+        "text": "Hai tệp thực thi buộc dùng cùng một PCB"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.1, tr. 10. Một chương trình có thể tương ứng với nhiều tiến trình."
+  },
+  {
+    "id": 23,
+    "text": "Khi tạo không gian địa chỉ cho chương trình, thành phần nào đọc tệp thực thi và đưa mã, dữ liệu vào vùng nhớ phù hợp?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bộ xử lý lệnh (shell)"
+      },
+      {
+        "id": "B",
+        "text": "Đèn báo (semaphore)"
+      },
+      {
+        "id": "C",
+        "text": "Bộ điều phối công việc (job scheduler)"
+      },
+      {
+        "id": "D",
+        "text": "Bộ nạp (loader)"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.1, tr. 12. Slide mô tả các nhiệm vụ của loader/exec."
+  },
+  {
+    "id": 24,
+    "text": "Một tiến trình đã sẵn sàng chạy và chỉ còn đợi CPU. Trạng thái của nó là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chờ sự kiện (Waiting)"
+      },
+      {
+        "id": "B",
+        "text": "Đang thực hiện (Running)"
+      },
+      {
+        "id": "C",
+        "text": "Sẵn sàng (Ready)"
+      },
+      {
+        "id": "D",
+        "text": "Đã kết thúc (Terminated)"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.1, tr. 13–14. Ready và Waiting khác nhau ở lý do phải chờ.  [Dạng đề MGU, UCE]"
+  },
+  {
+    "id": 25,
+    "text": "Tiến trình đang Running yêu cầu đọc đĩa và phải chờ kết quả. Nó chuyển sang trạng thái nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ready"
+      },
+      {
+        "id": "B",
+        "text": "Terminated"
+      },
+      {
+        "id": "C",
+        "text": "New"
+      },
+      {
+        "id": "D",
+        "text": "Waiting"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.1, tr. 13–14. Tiến trình bị chặn để chờ thao tác I/O hoàn tất.  [Dạng đề MGU]"
+  },
+  {
+    "id": 26,
+    "text": "Một thao tác I/O kết thúc. Theo sơ đồ năm trạng thái, tiến trình đang chờ thao tác đó chuyển đi đâu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Waiting → Running ngay"
+      },
+      {
+        "id": "B",
+        "text": "Waiting → Ready"
+      },
+      {
+        "id": "C",
+        "text": "Waiting → Terminated"
+      },
+      {
+        "id": "D",
+        "text": "Waiting → New"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.1, tr. 14. Tiến trình quay lại tập sẵn sàng và chờ được chọn.  [Dạng đề MGU]"
+  },
+  {
+    "id": 27,
+    "text": "Cặp thông tin nào được lưu trong khối điều khiển tiến trình (PCB)?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mã nguồn chương trình và phiên bản trình biên dịch"
+      },
+      {
+        "id": "B",
+        "text": "Trạng thái tiến trình và bộ đếm lệnh"
+      },
+      {
+        "id": "C",
+        "text": "Dung lượng của mọi đĩa và tốc độ của mọi máy in"
+      },
+      {
+        "id": "D",
+        "text": "Toàn bộ biến môi trường của mọi tiến trình"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.1, tr. 14–15. PCB chứa trạng thái và ngữ cảnh CPU cùng thông tin quản lý.  [Dạng đề UMass]"
+  },
+  {
+    "id": 28,
+    "text": "Một tiến trình chờ thiết bị I/O cụ thể thường nằm trong hàng đợi nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hàng đợi hồi tiếp mức cao nhất"
+      },
+      {
+        "id": "B",
+        "text": "Hàng đợi của biến điều kiện trong monitor"
+      },
+      {
+        "id": "C",
+        "text": "Hàng đợi thiết bị (device queue)"
+      },
+      {
+        "id": "D",
+        "text": "Hàng đợi sẵn sàng (ready queue)"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.2, tr. 20–23. Device queue chứa các tiến trình chờ thiết bị tương ứng."
+  },
+  {
+    "id": 29,
+    "text": "Bộ điều phối nào chọn công việc đưa vào bộ nhớ và kiểm soát mức độ đa chương trình?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bộ điều phối dài hạn (long-term scheduler)"
+      },
+      {
+        "id": "B",
+        "text": "Bộ xử lý lệnh (shell)"
+      },
+      {
+        "id": "C",
+        "text": "Bộ điều phối ngắn hạn (short-term scheduler)"
+      },
+      {
+        "id": "D",
+        "text": "Bộ điều phối trung hạn (medium-term scheduler)"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.2, tr. 24–25. Bộ điều phối dài hạn quyết định nhận công việc vào bộ nhớ để thực hiện."
+  },
+  {
+    "id": 30,
+    "text": "Vì sao bộ điều phối công việc nên chọn cả tiến trình thiên CPU và tiến trình thiên I/O?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Để tất cả công việc có cùng độ ưu tiên"
+      },
+      {
+        "id": "B",
+        "text": "Để tắt chức năng chuyển ngữ cảnh"
+      },
+      {
+        "id": "C",
+        "text": "Để mọi tiến trình cùng sử dụng một thiết bị"
+      },
+      {
+        "id": "D",
+        "text": "Để CPU và thiết bị I/O đều có việc thực hiện"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.2, tr. 27–30. Việc pha trộn hai nhóm giúp giảm thời gian nhàn rỗi của các bộ phận."
+  },
+  {
+    "id": 31,
+    "text": "Khi đổi CPU từ P1 sang P2, thao tác nào cần thiết để hai tiến trình có thể tiếp tục đúng chỗ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Xóa bộ đếm lệnh của cả hai tiến trình"
+      },
+      {
+        "id": "B",
+        "text": "Cấp lại tệp thực thi cho P1 và P2"
+      },
+      {
+        "id": "C",
+        "text": "Lưu ngữ cảnh P1 và khôi phục ngữ cảnh P2"
+      },
+      {
+        "id": "D",
+        "text": "Đặt cả hai tiến trình vào trạng thái Terminated"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.2, tr. 31–32. Lưu và nạp ngữ cảnh là hoạt động cốt lõi của chuyển ngữ cảnh.  [Dạng đề UMass]"
+  },
+  {
+    "id": 32,
+    "text": "Bộ điều phối trung hạn giảm mức độ đa chương trình bằng cách nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giảm quantum của tất cả tiến trình xuống 0"
+      },
+      {
+        "id": "B",
+        "text": "Thay hàng đợi thiết bị bằng hộp thư"
+      },
+      {
+        "id": "C",
+        "text": "Chia mọi tiến trình thành nhiều luồng mức người dùng"
+      },
+      {
+        "id": "D",
+        "text": "Tạm đưa tiến trình ra khỏi bộ nhớ và nạp lại khi phù hợp"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.2, tr. 33. Đây là cơ chế hoán chuyển tiến trình (swapping) trong slide."
+  },
+  {
+    "id": 33,
+    "text": "P0 tạo P1, rồi P1 tạo P2. Quan hệ cha–con trực tiếp nào đúng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P0 là cha trực tiếp của P2"
+      },
+      {
+        "id": "B",
+        "text": "P2 là cha trực tiếp của P0"
+      },
+      {
+        "id": "C",
+        "text": "P1 là cha trực tiếp của P2"
+      },
+      {
+        "id": "D",
+        "text": "P1 và P2 có cùng cha trực tiếp"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.3, tr. 35–40. Mỗi cạnh trong cây tiến trình biểu diễn quan hệ với tiến trình tạo trực tiếp.  [Dạng đề UMass]"
+  },
+  {
+    "id": 34,
+    "text": "Với bộ đệm hữu hạn đang đầy, bên nào phải chờ trước khi tiếp tục thao tác với bộ đệm?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Người sản xuất muốn thêm sản phẩm"
+      },
+      {
+        "id": "B",
+        "text": "Cả hai vì buffer đã đầy"
+      },
+      {
+        "id": "C",
+        "text": "Người tiêu thụ muốn lấy sản phẩm"
+      },
+      {
+        "id": "D",
+        "text": "Người tiêu thụ vì không có sản phẩm"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.4, tr. 46–49. Bộ đệm đầy không còn chỗ để producer thêm phần tử."
+  },
+  {
+    "id": 35,
+    "text": "Hai mô hình trao đổi dữ liệu giữa các tiến trình được trình bày là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Điều phối dài hạn và ngắn hạn"
+      },
+      {
+        "id": "B",
+        "text": "Luồng mức người dùng và mức nhân"
+      },
+      {
+        "id": "C",
+        "text": "Bộ nhớ dùng chung và truyền thông điệp"
+      },
+      {
+        "id": "D",
+        "text": "FCFS và Round Robin"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.5, tr. 51–52. Shared memory và message passing là hai mô hình IPC được đặt cạnh nhau."
+  },
+  {
+    "id": 36,
+    "text": "Hai tiến trình trao đổi qua cùng một mailbox. Đây là kiểu truyền thông nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Gián tiếp (indirect communication)"
+      },
+      {
+        "id": "B",
+        "text": "Không có vùng đệm bắt buộc"
+      },
+      {
+        "id": "C",
+        "text": "Không đồng bộ bắt buộc"
+      },
+      {
+        "id": "D",
+        "text": "Trực tiếp (direct communication)"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.5, tr. 55–56. Hộp thư hoặc cổng làm trung gian cho truyền thông gián tiếp."
+  },
+  {
+    "id": 37,
+    "text": "Một tiến trình gọi receive khi chưa có thông điệp. Kiểu lời gọi nào khiến nó đợi thông điệp tới?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Blocking send"
+      },
+      {
+        "id": "B",
+        "text": "Non-blocking receive"
+      },
+      {
+        "id": "C",
+        "text": "Non-blocking send"
+      },
+      {
+        "id": "D",
+        "text": "Blocking receive"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.5, tr. 57. Blocking receive tạm chặn tiến trình nhận cho tới khi có thông điệp."
+  },
+  {
+    "id": 38,
+    "text": "Hàng đợi thông điệp có sức chứa bằng 0. Bên gửi phải làm gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tăng sức chứa của hàng đợi trước khi gửi"
+      },
+      {
+        "id": "B",
+        "text": "Đợi bên nhận tiếp nhận thông điệp"
+      },
+      {
+        "id": "C",
+        "text": "Đợi bên nhận giải phóng một ô đã chứa thông điệp"
+      },
+      {
+        "id": "D",
+        "text": "Luôn đặt thông điệp vào cuối hàng đợi rồi đi tiếp"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.5, tr. 58–59. Sức chứa bằng 0 không có chỗ giữ thông điệp trung gian."
+  },
+  {
+    "id": 39,
+    "text": "Thuộc tính nào mỗi luồng trong cùng một tiến trình giữ riêng để theo dõi vị trí thực thi?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bộ đếm chương trình (program counter)"
+      },
+      {
+        "id": "B",
+        "text": "Các tập tin đang mở của tiến trình"
+      },
+      {
+        "id": "C",
+        "text": "Đoạn mã của tiến trình"
+      },
+      {
+        "id": "D",
+        "text": "Vùng dữ liệu toàn cục"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §2.1, tr. 71–72. Bộ đếm chương trình, thanh ghi và stack thuộc ngữ cảnh riêng của từng luồng."
+  },
+  {
+    "id": 40,
+    "text": "Một trình soạn thảo vẫn tiếp nhận phím gõ khi luồng khác ghi tệp. Tình huống minh họa lợi ích nào của đa luồng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giảm thời lượng mọi thao tác ghi đĩa về 0"
+      },
+      {
+        "id": "B",
+        "text": "Tăng khả năng đáp ứng với người dùng"
+      },
+      {
+        "id": "C",
+        "text": "Tạo bộ nhớ địa chỉ riêng cho mỗi luồng"
+      },
+      {
+        "id": "D",
+        "text": "Bảo đảm không thể xảy ra bế tắc"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §2.1, tr. 73–75. Một phần ứng dụng vẫn hoạt động khi phần khác bị chặn."
+  },
+  {
+    "id": 41,
+    "text": "Trong mô hình luồng mức nhân, thành phần nào duy trì thông tin và điều phối các luồng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Riêng thư viện luồng trong ứng dụng"
+      },
+      {
+        "id": "B",
+        "text": "Nhân hệ điều hành"
+      },
+      {
+        "id": "C",
+        "text": "Bộ điều khiển đĩa"
+      },
+      {
+        "id": "D",
+        "text": "Bộ nạp tệp thực thi"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §2.1, tr. 77–80. Kernel quản lý trực tiếp các luồng mức nhân.  [Dạng đề UCSD]"
+  },
+  {
+    "id": 42,
+    "text": "Mô hình nào ánh xạ nhiều luồng mức người dùng vào đúng một luồng mức nhân?",
+    "options": [
+      {
+        "id": "A",
+        "text": "One-to-One"
+      },
+      {
+        "id": "B",
+        "text": "Two-Level"
+      },
+      {
+        "id": "C",
+        "text": "Many-to-Many"
+      },
+      {
+        "id": "D",
+        "text": "Many-to-One"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §2.2, tr. 83–84. Một luồng nhân duy nhất giới hạn khả năng chạy song song của tiến trình.  [Dạng đề UCSD, UCE]"
+  },
+  {
+    "id": 43,
+    "text": "Mô hình nào cho phép vừa ghép nhiều luồng người dùng lên nhiều luồng nhân, vừa gắn riêng một số luồng người dùng với luồng nhân?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hai mức (Two-Level)"
+      },
+      {
+        "id": "B",
+        "text": "Nhiều–nhiều thuần túy (Many-to-Many)"
+      },
+      {
+        "id": "C",
+        "text": "Nhiều–một (Many-to-One)"
+      },
+      {
+        "id": "D",
+        "text": "Một–một thuần túy (One-to-One)"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §2.2, tr. 84–87. Two-Level kết hợp ánh xạ nhiều–nhiều với khả năng liên kết riêng.  [Dạng đề UCSD, UCE]"
+  },
+  {
+    "id": 44,
+    "text": "Trong mô hình CPU burst và I/O burst, tiến trình thường thực hiện theo nhịp nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dùng CPU liên tục suốt vòng đời"
+      },
+      {
+        "id": "B",
+        "text": "Luân phiên tính toán trên CPU và chờ vào ra"
+      },
+      {
+        "id": "C",
+        "text": "Hai giai đoạn luôn diễn ra đồng thời trên cùng luồng"
+      },
+      {
+        "id": "D",
+        "text": "Chỉ chờ vào ra rồi kết thúc"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.1, tr. 98–99. Slide mô tả các đợt CPU và I/O nối tiếp nhau."
+  },
+  {
+    "id": 45,
+    "text": "Một ngắt đồng hồ khiến tiến trình đang chạy phải nhường CPU và đưa nó về Ready. Đây là dấu hiệu của điều phối nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hoán chuyển mức trung hạn bắt buộc"
+      },
+      {
+        "id": "B",
+        "text": "Có trưng dụng (preemptive)"
+      },
+      {
+        "id": "C",
+        "text": "Điều phối dài hạn"
+      },
+      {
+        "id": "D",
+        "text": "Không trưng dụng (non-preemptive)"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.1, tr. 100–102. Hệ điều hành thu lại CPU khi tiến trình vẫn có thể tiếp tục.  [Dạng đề MGU]"
+  },
+  {
+    "id": 46,
+    "text": "Trong điều phối không trưng dụng, khi nào tiến trình đang chạy có thể nhường CPU cho việc khác?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mỗi khi hàng đợi thiết bị có thêm phần tử"
+      },
+      {
+        "id": "B",
+        "text": "Cứ sau mỗi quantum bắt buộc"
+      },
+      {
+        "id": "C",
+        "text": "Ngay khi bất kỳ tiến trình mới nào tới Ready"
+      },
+      {
+        "id": "D",
+        "text": "Khi nó kết thúc hoặc chuyển sang chờ"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.1, tr. 100–101. Tiến trình giữ CPU cho tới khi kết thúc hoặc tự chuyển sang chờ."
+  },
+  {
+    "id": 47,
+    "text": "Yêu cầu “không để một tiến trình đợi vô hạn để được chạy” thuộc tiêu chí nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mức độ đa chương trình"
+      },
+      {
+        "id": "B",
+        "text": "Thông lượng (throughput)"
+      },
+      {
+        "id": "C",
+        "text": "Thời gian turnaround"
+      },
+      {
+        "id": "D",
+        "text": "Công bằng (fairness)"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.2, tr. 104. Công bằng liên quan đến chia sẻ CPU và giới hạn việc chờ.  [Dạng đề MGU]"
+  },
+  {
+    "id": 48,
+    "text": "Chỉ số nào đo số tiến trình hoàn tất trong một đơn vị thời gian?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Thông lượng (throughput)"
+      },
+      {
+        "id": "B",
+        "text": "Thời gian chờ (waiting time)"
+      },
+      {
+        "id": "C",
+        "text": "Thời gian đáp ứng (response time)"
+      },
+      {
+        "id": "D",
+        "text": "Mức sử dụng CPU (CPU utilization)"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.2, tr. 105. Một hệ thống hoàn tất 30 tiến trình trong 10 giây có thông lượng 3 tiến trình/giây trong khoảng đó.  [Dạng đề MGU]"
+  },
+  {
+    "id": 49,
+    "text": "Yêu cầu đến lúc 3 ms, có phản hồi đầu tiên lúc 7 ms và hoàn tất lúc 15 ms. Thời gian đáp ứng và hoàn thành lần lượt là bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "7 ms và 15 ms"
+      },
+      {
+        "id": "B",
+        "text": "8 ms và 12 ms"
+      },
+      {
+        "id": "C",
+        "text": "4 ms và 12 ms"
+      },
+      {
+        "id": "D",
+        "text": "12 ms và 4 ms"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.2, tr. 106–107. Vận dụng định nghĩa: 7 − 3 = 4 và 15 − 3 = 12.  [Dạng đề MGU]"
+  },
+  {
+    "id": 50,
+    "text": "Tiến trình đợi 2 ms trong ready queue, chạy 5 ms, đợi I/O 3 ms rồi chạy thêm 1 ms để kết thúc. Không có khoảng nào khác. Turnaround bằng bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "2 ms"
+      },
+      {
+        "id": "B",
+        "text": "11 ms"
+      },
+      {
+        "id": "C",
+        "text": "6 ms"
+      },
+      {
+        "id": "D",
+        "text": "8 ms"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.2, tr. 106. Vận dụng định nghĩa: turnaround bao gồm cả khoảng chờ I/O."
+  },
+  {
+    "id": 51,
+    "text": "Trong FCFS, P1 vào ready queue trước P2 và P3. P1 có CPU burst dài. Nhược điểm nào có thể xuất hiện?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P1 tự động bị ngắt khi P2 đến"
+      },
+      {
+        "id": "B",
+        "text": "Hai tiến trình ngắn phải chờ P1 dùng CPU xong"
+      },
+      {
+        "id": "C",
+        "text": "P1 bị hạ mức khi hết quantum"
+      },
+      {
+        "id": "D",
+        "text": "P2 và P3 chạy trước vì có burst ngắn hơn"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 109–110. FCFS giữ thứ tự đến, nên công việc ngắn có thể xếp sau công việc dài.  [Dạng đề UCE]"
+  },
+  {
+    "id": 52,
+    "text": "P1, P2, P3 cùng đến lúc 0 và vào hàng theo thứ tự này. Burst lần lượt là 5, 2, 4 ms. Dùng FCFS, thời gian chờ trung bình là bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "4 ms"
+      },
+      {
+        "id": "B",
+        "text": "8 ms"
+      },
+      {
+        "id": "C",
+        "text": "7 ms"
+      },
+      {
+        "id": "D",
+        "text": "5 ms"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.3, tr. 108–110. Vận dụng: ba thời gian chờ là 0, 5 và 7 ms.  [Dạng đề Duke]"
+  },
+  {
+    "id": 53,
+    "text": "FCFS có P1 đến lúc 0 với burst 3 ms và P2 đến lúc 5 với burst 2 ms. Trong khoảng nào CPU rảnh?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Từ 0 đến 3 ms"
+      },
+      {
+        "id": "B",
+        "text": "Từ 2 đến 5 ms"
+      },
+      {
+        "id": "C",
+        "text": "Từ 5 đến 7 ms"
+      },
+      {
+        "id": "D",
+        "text": "Từ 3 đến 5 ms"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.3, tr. 109–110. Vận dụng: P1 xong lúc 3 ms và P2 chỉ đến lúc 5 ms.  [Dạng đề Duke]"
+  },
+  {
+    "id": 54,
+    "text": "P1, P2, P3 cùng sẵn sàng với burst lần lượt 7, 2 và 4 ms. SJF không trưng dụng chọn thứ tự nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P2 → P1 → P3"
+      },
+      {
+        "id": "B",
+        "text": "P1 → P2 → P3"
+      },
+      {
+        "id": "C",
+        "text": "P2 → P3 → P1"
+      },
+      {
+        "id": "D",
+        "text": "P3 → P2 → P1"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.3, tr. 111. Vận dụng: ở mỗi lần chọn, lấy CPU burst ngắn nhất trong tập sẵn sàng.  [Dạng đề Duke]"
+  },
+  {
+    "id": 55,
+    "text": "P1 chạy từ lúc 0, burst 7 ms. P2 đến lúc 2, burst 3 ms. Với SRTF, CPU chạy tiến trình nào ngay sau mốc 2 ms?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P1, vì chỉ so sánh ở cuối burst"
+      },
+      {
+        "id": "B",
+        "text": "P1, vì nó vào trước"
+      },
+      {
+        "id": "C",
+        "text": "CPU rảnh đến khi P2 chờ đủ một quantum"
+      },
+      {
+        "id": "D",
+        "text": "P2, vì 3 ms nhỏ hơn 5 ms P1 còn lại"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.3, tr. 111. Vận dụng: SRTF so sánh phần CPU còn lại.  [Dạng đề UCE]"
+  },
+  {
+    "id": 56,
+    "text": "Trở ngại khi áp dụng SJF trong thực tế được slide nêu là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không thể biết tiến trình nào đang ở hàng đợi sẵn sàng"
+      },
+      {
+        "id": "B",
+        "text": "SJF chỉ chọn được khi tất cả burst bằng nhau"
+      },
+      {
+        "id": "C",
+        "text": "Thời lượng CPU burst tiếp theo thường phải được dự đoán"
+      },
+      {
+        "id": "D",
+        "text": "SJF luôn cần mỗi tiến trình có một CPU riêng"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 111. Slide gợi ý dự báo burst từ các lần trước."
+  },
+  {
+    "id": 57,
+    "text": "Quy ước số nhỏ hơn có ưu tiên cao hơn. P1, P2, P3 đều sẵn sàng, có độ ưu tiên lần lượt 4, 1, 3. Ai được chọn trước?",
+    "options": [
+      {
+        "id": "A",
+        "text": "P3"
+      },
+      {
+        "id": "B",
+        "text": "P2"
+      },
+      {
+        "id": "C",
+        "text": "P1"
+      },
+      {
+        "id": "D",
+        "text": "Cả ba có quyền ưu tiên như nhau"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.3, tr. 112. Vận dụng: ưu tiên 1 cao nhất theo quy ước đề bài."
+  },
+  {
+    "id": 58,
+    "text": "Khi nhiều công việc ưu tiên cao liên tục đến, công việc mức thấp chờ mãi. Cách nào trong slide giúp hạn chế tình trạng này?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tăng ưu tiên mọi công việc mới đến"
+      },
+      {
+        "id": "B",
+        "text": "Hạ dần độ ưu tiên của công việc đã chờ lâu"
+      },
+      {
+        "id": "C",
+        "text": "Tăng dần độ ưu tiên của công việc đã chờ lâu (aging)"
+      },
+      {
+        "id": "D",
+        "text": "Chuyển công việc ưu tiên thấp từ Ready sang Terminated"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 112. Aging tăng cơ hội được chọn cho công việc chờ lâu.  [Dạng đề UCSD]"
+  },
+  {
+    "id": 59,
+    "text": "Round Robin xử lý thế nào khi tiến trình dùng hết quantum nhưng vẫn còn CPU burst?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đưa tiến trình về cuối hàng đợi sẵn sàng"
+      },
+      {
+        "id": "B",
+        "text": "Đưa về đầu hàng đợi sẵn sàng"
+      },
+      {
+        "id": "C",
+        "text": "Chuyển tiến trình sang hàng đợi thiết bị"
+      },
+      {
+        "id": "D",
+        "text": "Đánh dấu tiến trình đã kết thúc"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 113. Tiến trình phải đợi lượt sau để chạy phần còn lại.  [Dạng đề Duke, UCE]"
+  },
+  {
+    "id": 60,
+    "text": "Khi giảm quantum của Round Robin xuống rất nhỏ, chi phí nào có xu hướng tăng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Dung lượng hàng đợi thông điệp"
+      },
+      {
+        "id": "B",
+        "text": "Số đơn vị tài nguyên trong Banker"
+      },
+      {
+        "id": "C",
+        "text": "Chi phí chuyển ngữ cảnh"
+      },
+      {
+        "id": "D",
+        "text": "Số vùng địa chỉ của mỗi luồng"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 113–114. Tiến trình hết lượt thường xuyên hơn nên CPU phải chuyển ngữ cảnh nhiều hơn.  [Dạng đề Duke]"
+  },
+  {
+    "id": 61,
+    "text": "P1 và P2 vào ready queue lúc 0 theo thứ tự đó, burst lần lượt 5 và 3 ms. RR có quantum 2 ms, bỏ qua chi phí chuyển ngữ cảnh. P2 hoàn tất lúc nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "8 ms"
+      },
+      {
+        "id": "B",
+        "text": "7 ms"
+      },
+      {
+        "id": "C",
+        "text": "5 ms"
+      },
+      {
+        "id": "D",
+        "text": "6 ms"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.3, tr. 113–114. Vận dụng: P1 0–2, P2 2–4, P1 4–6, P2 6–7, P1 7–8.  [Dạng đề Duke, UCE]"
+  },
+  {
+    "id": 62,
+    "text": "Cơ chế nào phân biệt hàng đợi hồi tiếp đa mức với hàng đợi đa mức cố định?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Hàng đợi có thể mang các độ ưu tiên khác nhau"
+      },
+      {
+        "id": "B",
+        "text": "Hệ thống có nhiều hàng đợi sẵn sàng"
+      },
+      {
+        "id": "C",
+        "text": "Mỗi hàng đợi có thể dùng một thuật toán riêng"
+      },
+      {
+        "id": "D",
+        "text": "Tiến trình có thể chuyển qua lại giữa các hàng đợi"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 117–123. Cả hai đều có nhiều hàng đợi, còn MLFQ cho phép thăng hoặc hạ mức."
+  },
+  {
+    "id": 63,
+    "text": "Có hai hàng đợi dùng ưu tiên cố định tuyệt đối. Hàng ưu tiên cao liên tục có việc sẵn sàng. Hàng thấp có thể gặp hiện tượng nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bế tắc vì luôn giữ tài nguyên của hàng cao"
+      },
+      {
+        "id": "B",
+        "text": "Tăng mức ưu tiên nhờ quantum lớn"
+      },
+      {
+        "id": "C",
+        "text": "Đói CPU (starvation)"
+      },
+      {
+        "id": "D",
+        "text": "Chuyển sang hàng cao tự động ở mọi hệ thống"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 117–118. Slide nêu nguy cơ starvation khi hàng cao không rỗng."
+  },
+  {
+    "id": 64,
+    "text": "Theo ví dụ hàng đợi hồi tiếp đa mức, tiến trình liên tục dùng hết thời gian CPU có thể được xử lý thế nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đưa sang hàng đợi dài hạn và xóa PCB"
+      },
+      {
+        "id": "B",
+        "text": "Chuyển lên hàng có độ ưu tiên cao hơn ngay"
+      },
+      {
+        "id": "C",
+        "text": "Chuyển xuống hàng có độ ưu tiên thấp hơn"
+      },
+      {
+        "id": "D",
+        "text": "Chuyển thẳng sang Waiting để đợi I/O"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.3, tr. 121–123. Hạ mức cho tiến trình dùng nhiều CPU là một quy tắc hồi tiếp được minh họa."
+  },
+  {
+    "id": 65,
+    "text": "Trong mô hình đa xử lý đối xứng của slide, các bộ xử lý thực hiện điều phối theo cách nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chỉ bộ xử lý chính được chạy bộ điều phối"
+      },
+      {
+        "id": "B",
+        "text": "Mỗi bộ xử lý chỉ làm I/O"
+      },
+      {
+        "id": "C",
+        "text": "Mỗi bộ xử lý có thể chạy bộ điều phối để chọn việc"
+      },
+      {
+        "id": "D",
+        "text": "Mọi tiến trình được gán cố định từ lúc biên dịch"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §3.4, tr. 127–131. Trong SMP, các bộ xử lý có thể chọn việc từ hàng đợi riêng, chung hoặc kết hợp."
+  },
+  {
+    "id": 66,
+    "text": "Một máy in chỉ phục vụ một công việc tại một thời điểm và nhiều tiến trình cùng muốn dùng. Theo mục 4.1, nó thuộc loại nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Ngữ cảnh CPU"
+      },
+      {
+        "id": "B",
+        "text": "Tài nguyên găng"
+      },
+      {
+        "id": "C",
+        "text": "Đoạn găng"
+      },
+      {
+        "id": "D",
+        "text": "Biến điều kiện"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.1, tr. 149. Tài nguyên găng là đối tượng có khả năng dùng chung hạn chế.  [Dạng đề UMass]"
+  },
+  {
+    "id": 67,
+    "text": "Biến counter ban đầu bằng 5. Producer và consumer đều đọc 5. Producer ghi 6, rồi consumer ghi 4. Giá trị cuối nào cho thấy lỗi xen kẽ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "6, vì producer ghi trước"
+      },
+      {
+        "id": "B",
+        "text": "4, trong khi tăng và giảm tuần tự phải cho 5"
+      },
+      {
+        "id": "C",
+        "text": "5, vì hai lần ghi đồng thời tự triệt tiêu"
+      },
+      {
+        "id": "D",
+        "text": "0, vì bộ đệm phải được đặt lại"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §4.1, tr. 142–150. Vận dụng: lượt ghi cuối đè kết quả trước, minh họa race condition.  [Dạng đề UMass, UCSD]"
+  },
+  {
+    "id": 68,
+    "text": "Trong cấu trúc phần vào, đoạn găng, phần ra và phần còn lại, đoạn nào truy cập hoặc sửa dữ liệu dùng chung cần bảo vệ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đoạn găng (critical section)"
+      },
+      {
+        "id": "B",
+        "text": "Phần ra (exit section)"
+      },
+      {
+        "id": "C",
+        "text": "Phần vào (entry section)"
+      },
+      {
+        "id": "D",
+        "text": "Phần còn lại (remainder section)"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.1, tr. 152–154. Phần vào xin quyền và phần ra trả quyền truy cập đoạn găng."
+  },
+  {
+    "id": 69,
+    "text": "Hai luồng không bao giờ cùng ở trong đoạn găng của một tài nguyên chỉ cho phép một người dùng. Điều này thỏa yêu cầu nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tiến triển (progress)"
+      },
+      {
+        "id": "B",
+        "text": "Chờ đợi vòng tròn (circular wait)"
+      },
+      {
+        "id": "C",
+        "text": "Loại trừ lẫn nhau (mutual exclusion)"
+      },
+      {
+        "id": "D",
+        "text": "Chờ đợi hữu hạn (bounded waiting)"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.1, tr. 153. Loại trừ lẫn nhau giới hạn số bên được vào đoạn găng cùng lúc.  [Dạng đề UMass]"
+  },
+  {
+    "id": 70,
+    "text": "Đoạn găng đang trống, có tiến trình muốn vào nhưng việc chọn người vào bị hoãn mãi. Yêu cầu nào bị vi phạm trực tiếp?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Loại trừ lẫn nhau (mutual exclusion)"
+      },
+      {
+        "id": "B",
+        "text": "Không trưng dụng (no preemption)"
+      },
+      {
+        "id": "C",
+        "text": "Tiến triển (progress)"
+      },
+      {
+        "id": "D",
+        "text": "Chờ đợi vòng tròn (circular wait)"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.1, tr. 153. Khi có khả năng phục vụ và có bên muốn vào, việc lựa chọn phải tiến triển.  [Dạng đề UCSD]"
+  },
+  {
+    "id": 71,
+    "text": "Yêu cầu nào giới hạn số lần tiến trình khác được vào đoạn găng trước một tiến trình đã xin vào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chờ đợi vòng tròn (circular wait)"
+      },
+      {
+        "id": "B",
+        "text": "Chờ đợi hữu hạn (bounded waiting)"
+      },
+      {
+        "id": "C",
+        "text": "Loại trừ lẫn nhau (mutual exclusion)"
+      },
+      {
+        "id": "D",
+        "text": "Điều phối ưu tiên cố định"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.1, tr. 153. Giới hạn này ngăn một bên bị vượt lượt mãi."
+  },
+  {
+    "id": 72,
+    "text": "Theo cách phân nhóm trong slide, đâu là công cụ điều độ cấp cao?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Khóa trong"
+      },
+      {
+        "id": "B",
+        "text": "Monitor"
+      },
+      {
+        "id": "C",
+        "text": "Semaphore"
+      },
+      {
+        "id": "D",
+        "text": "Test-and-Set"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.1, tr. 155. Slide xếp khóa trong, Test-and-Set và semaphore vào nhóm công cụ cấp thấp.  [Dạng đề UMass]"
+  },
+  {
+    "id": 73,
+    "text": "Trong thuật toán Dekker trên slide, biến turn có vai trò gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Lưu địa chỉ quay về của lời gọi hệ thống"
+      },
+      {
+        "id": "B",
+        "text": "Đặt lại số tiến trình đang chờ thiết bị"
+      },
+      {
+        "id": "C",
+        "text": "Chỉ ra tiến trình có quyền ưu tiên khi cùng muốn vào"
+      },
+      {
+        "id": "D",
+        "text": "Đếm số vị trí trống trong bộ đệm"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.2, tr. 158–161. Dekker dùng biến turn cùng cờ của từng tiến trình."
+  },
+  {
+    "id": 74,
+    "text": "Tính chất nào của Test-and-Set khắc phục việc kiểm tra và đặt khóa bị xen kẽ?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Cất trạng thái khóa vào bộ nhớ riêng của từng tiến trình"
+      },
+      {
+        "id": "B",
+        "text": "Luôn đưa tiến trình chờ vào trạng thái ngủ"
+      },
+      {
+        "id": "C",
+        "text": "Kiểm tra và đặt khóa bằng hai lệnh độc lập"
+      },
+      {
+        "id": "D",
+        "text": "Đọc giá trị cũ và đặt khóa trong một thao tác nguyên tử"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.3, tr. 164–167. Phần cứng bảo đảm thao tác kiểm tra và thay đổi giá trị diễn ra nguyên tử.  [Dạng đề UMass, UCSD]"
+  },
+  {
+    "id": 75,
+    "text": "Trong cách dùng Test-and-Set đơn giản trên slide, tiến trình liên tục thử lại khi khóa bận. Hiện tượng này gọi là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chờ đợi hữu hạn (bounded waiting)"
+      },
+      {
+        "id": "B",
+        "text": "Chờ đợi tích cực (busy waiting)"
+      },
+      {
+        "id": "C",
+        "text": "Truyền thông gián tiếp (indirect communication)"
+      },
+      {
+        "id": "D",
+        "text": "Chuyển ngữ cảnh (context switch)"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.3, tr. 165–167. Tiến trình có thể tiêu tốn thời gian CPU chỉ để kiểm tra khóa."
+  },
+  {
+    "id": 76,
+    "text": "Để dùng semaphore mutex cho một đoạn găng chỉ cho phép một tiến trình vào, đặt giá trị khởi tạo bằng bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "0"
+      },
+      {
+        "id": "B",
+        "text": "1"
+      },
+      {
+        "id": "C",
+        "text": "2"
+      },
+      {
+        "id": "D",
+        "text": "Bằng số tiến trình đang sẵn sàng"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.4, tr. 169–171. Giá trị 1 tương ứng với một quyền vào lúc ban đầu.  [Dạng đề UCE]"
+  },
+  {
+    "id": 77,
+    "text": "Thứ tự nào đúng khi dùng semaphore mutex bảo vệ đoạn găng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "wait(mutex) → signal(mutex) → đoạn găng"
+      },
+      {
+        "id": "B",
+        "text": "đoạn găng → wait(mutex) → signal(mutex)"
+      },
+      {
+        "id": "C",
+        "text": "wait(mutex) → đoạn găng → signal(mutex)"
+      },
+      {
+        "id": "D",
+        "text": "signal(mutex) → đoạn găng → wait(mutex)"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.4, tr. 169–175. Phải lấy quyền trước khi vào và trả quyền sau khi ra.  [Dạng đề Duke]"
+  },
+  {
+    "id": 78,
+    "text": "Triển khai semaphore dùng thao tác nào để tiến trình không phải quay vòng chờ khi chưa lấy được quyền?",
+    "options": [
+      {
+        "id": "A",
+        "text": "bind() và listen()"
+      },
+      {
+        "id": "B",
+        "text": "block() và wakeup()"
+      },
+      {
+        "id": "C",
+        "text": "fork() và exit()"
+      },
+      {
+        "id": "D",
+        "text": "admit() và dispatch()"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.4, tr. 173–174. Tiến trình chưa được cấp quyền sẽ ngủ và có thể được đánh thức bởi signal.  [Dạng đề Duke]"
+  },
+  {
+    "id": 79,
+    "text": "Trong bài toán người đọc và người ghi trên slide, khi không có writer cập nhật thì cách truy cập nào được phép?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Nhiều reader cùng đọc"
+      },
+      {
+        "id": "B",
+        "text": "Một writer ghi đồng thời với mọi reader"
+      },
+      {
+        "id": "C",
+        "text": "Nhiều writer cùng ghi"
+      },
+      {
+        "id": "D",
+        "text": "Chỉ một reader được đọc mỗi lần"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.5, tr. 195. Các reader có thể đọc chung, còn thao tác ghi cần độc quyền."
+  },
+  {
+    "id": 80,
+    "text": "Trong đồng bộ theo hàng rào (barrier), điều gì xảy ra khi một tiến trình đến điểm hẹn sớm?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tiếp tục ngay và chỉ phát thông báo cho các bên khác"
+      },
+      {
+        "id": "B",
+        "text": "Chờ các tiến trình cần thiết còn lại đến hàng rào"
+      },
+      {
+        "id": "C",
+        "text": "Đưa tất cả tiến trình khác vào đoạn găng ngay"
+      },
+      {
+        "id": "D",
+        "text": "Kết thúc và trả toàn bộ tài nguyên"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.5, tr. 198–200. Hàng rào buộc các bên gặp nhau trước khi đi tiếp."
+  },
+  {
+    "id": 81,
+    "text": "Nếu mọi triết gia đều cầm dĩa bên trái rồi chờ dĩa bên phải, nguy cơ trực tiếp là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bế tắc do chờ theo vòng"
+      },
+      {
+        "id": "B",
+        "text": "Thiếu bộ nhớ khi ánh xạ luồng"
+      },
+      {
+        "id": "C",
+        "text": "Reader ghi đè dữ liệu của writer"
+      },
+      {
+        "id": "D",
+        "text": "Thông lượng tăng do nhiều triết gia cùng ăn"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.5, tr. 206–209. Ai cũng giữ một dĩa và chờ chiếc đang được người bên cạnh giữ.  [Dạng đề UCE]"
+  },
+  {
+    "id": 82,
+    "text": "Trong monitor, nếu gọi x.signal() lúc không có tiến trình nào đợi trên x thì theo slide điều gì xảy ra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tích lũy một lượt cho tiến trình gọi x.wait() sau đó"
+      },
+      {
+        "id": "B",
+        "text": "Đánh thức một tiến trình bất kỳ trong ready queue"
+      },
+      {
+        "id": "C",
+        "text": "Xóa biến điều kiện x"
+      },
+      {
+        "id": "D",
+        "text": "Lời gọi không có tác dụng đánh thức"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §4.6, tr. 214–218. Signal của biến điều kiện được bỏ qua khi hàng đợi tương ứng rỗng.  [Dạng đề Duke]"
+  },
+  {
+    "id": 83,
+    "text": "Trong mô hình sử dụng tài nguyên của chương bế tắc, thứ tự ba thao tác thông thường là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yêu cầu → sử dụng → giải phóng"
+      },
+      {
+        "id": "B",
+        "text": "Yêu cầu → giải phóng → sử dụng"
+      },
+      {
+        "id": "C",
+        "text": "Giải phóng → sử dụng → yêu cầu"
+      },
+      {
+        "id": "D",
+        "text": "Sử dụng → yêu cầu → giải phóng"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.1, tr. 226–227. Tiến trình xin trước, dùng sau khi được cấp, rồi trả lại."
+  },
+  {
+    "id": 84,
+    "text": "P1 giữ R1 và đợi R2, P2 giữ R2 và đợi R1. Hai tài nguyên đều chỉ có một đơn vị và không thể thu hồi. Hiện tượng nào xảy ra?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Đói CPU do ưu tiên thấp"
+      },
+      {
+        "id": "B",
+        "text": "Chờ hữu hạn do Round Robin"
+      },
+      {
+        "id": "C",
+        "text": "Bế tắc (deadlock)"
+      },
+      {
+        "id": "D",
+        "text": "Lỗi tải chương trình"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.1, tr. 227–242. Hai tiến trình đều chờ tài nguyên mà bên kia đang giữ."
+  },
+  {
+    "id": 85,
+    "text": "Nhóm nào gồm đủ bốn điều kiện cần của bế tắc?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Loại trừ lẫn nhau, giữ và chờ, không trưng dụng, chờ vòng tròn"
+      },
+      {
+        "id": "B",
+        "text": "Chia sẻ đồng thời, giữ và chờ, trưng dụng, chờ vòng tròn"
+      },
+      {
+        "id": "C",
+        "text": "Giữ và chờ, chờ hữu hạn, công bằng, không trưng dụng"
+      },
+      {
+        "id": "D",
+        "text": "Loại trừ lẫn nhau, tiến triển, chờ hữu hạn, chờ vòng tròn"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.2, tr. 244. Slide yêu cầu đồng thời đủ bốn điều kiện.  [Dạng đề MGU, UCSD]"
+  },
+  {
+    "id": 86,
+    "text": "Một tiến trình tiếp tục giữ khóa A trong lúc xin khóa B. Dấu hiệu này trực tiếp minh họa điều kiện nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Giữ và chờ (hold and wait)"
+      },
+      {
+        "id": "B",
+        "text": "Tiến triển (progress)"
+      },
+      {
+        "id": "C",
+        "text": "Chờ vòng tròn (circular wait)"
+      },
+      {
+        "id": "D",
+        "text": "Không trưng dụng (no preemption)"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.2, tr. 244–245. Tiến trình vừa giữ tài nguyên đã cấp vừa yêu cầu tài nguyên mới."
+  },
+  {
+    "id": 87,
+    "text": "Trong đồ thị cấp phát tài nguyên, cung Pi → Rj biểu diễn điều gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tài nguyên Rj đang yêu cầu thực thi Pi"
+      },
+      {
+        "id": "B",
+        "text": "Tài nguyên Rj đã cấp cho tiến trình Pi"
+      },
+      {
+        "id": "C",
+        "text": "Tiến trình Pi đang yêu cầu tài nguyên Rj"
+      },
+      {
+        "id": "D",
+        "text": "Tiến trình Pi đang trả tài nguyên Rj"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.2, tr. 246–248. Hướng ngược Rj → Pi mới biểu diễn cấp phát."
+  },
+  {
+    "id": 88,
+    "text": "Sau khi Pi trả lại Rj, thay đổi nào xảy ra với đồ thị cấp phát tài nguyên?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Xóa mọi cung của cả tiến trình Pi"
+      },
+      {
+        "id": "B",
+        "text": "Giữ cung Rj → Pi và đổi thành nét đứt bắt buộc"
+      },
+      {
+        "id": "C",
+        "text": "Thêm cung yêu cầu Pi → Rj"
+      },
+      {
+        "id": "D",
+        "text": "Xóa cung cấp phát Rj → Pi"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.2, tr. 247. Cung cấp phát chỉ tồn tại khi Pi đang giữ đơn vị tài nguyên."
+  },
+  {
+    "id": 89,
+    "text": "Đồ thị cấp phát tài nguyên có chu trình và một loại tài nguyên trong chu trình có nhiều đơn vị. Kết luận nào đúng chỉ từ thông tin đó?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chắc chắn có bế tắc"
+      },
+      {
+        "id": "B",
+        "text": "Có khả năng bế tắc, cần xét thêm"
+      },
+      {
+        "id": "C",
+        "text": "Chắc chắn không bế tắc"
+      },
+      {
+        "id": "D",
+        "text": "Chắc chắn mọi tiến trình đang bế tắc"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.2, tr. 252–253. Khi có nhiều đơn vị, tài nguyên có thể được trả bởi một tiến trình ngoài chu trình."
+  },
+  {
+    "id": 90,
+    "text": "Bắt mọi tiến trình xin tài nguyên theo cùng thứ tự tăng dần thuộc hướng xử lý nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Phòng tránh (avoidance), bằng cách chạy Banker sau mỗi yêu cầu"
+      },
+      {
+        "id": "B",
+        "text": "Khắc phục (recovery), bằng cách kết thúc tiến trình"
+      },
+      {
+        "id": "C",
+        "text": "Phòng ngừa (prevention), bằng cách loại khả năng chờ vòng tròn"
+      },
+      {
+        "id": "D",
+        "text": "Nhận biết (detection), bằng cách tìm chu trình sau khi cấp"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.3–5.4, tr. 255–257, 265–266. Thứ tự tăng toàn cục không thể khép lại thành vòng chờ."
+  },
+  {
+    "id": 91,
+    "text": "Một quy tắc bắt tiến trình lấy đủ mọi tài nguyên cần thiết ngay từ đầu. Nó nhắm phá điều kiện nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Không trưng dụng"
+      },
+      {
+        "id": "B",
+        "text": "Chờ đợi hữu hạn"
+      },
+      {
+        "id": "C",
+        "text": "Loại trừ lẫn nhau"
+      },
+      {
+        "id": "D",
+        "text": "Giữ và chờ"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.4, tr. 259–262. Tiến trình chỉ xin khi chưa giữ tài nguyên nào."
+  },
+  {
+    "id": 92,
+    "text": "Loại tài nguyên nào được slide nêu là phù hợp hơn với việc trưng dụng vì dễ lưu và khôi phục trạng thái?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tài liệu giấy do người dùng đang đọc"
+      },
+      {
+        "id": "B",
+        "text": "Máy in đang in dở"
+      },
+      {
+        "id": "C",
+        "text": "CPU"
+      },
+      {
+        "id": "D",
+        "text": "Giấy đã in ra"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.4, tr. 263–264. Trạng thái sử dụng CPU có thể lưu và phục hồi."
+  },
+  {
+    "id": 93,
+    "text": "Dấu hiệu nào xác định một trạng thái cấp phát là an toàn?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Mỗi tiến trình phải nhận được ngay toàn bộ nhu cầu còn lại"
+      },
+      {
+        "id": "B",
+        "text": "Tồn tại ít nhất một thứ tự để mọi tiến trình có thể hoàn tất"
+      },
+      {
+        "id": "C",
+        "text": "Mọi tiến trình phải có cùng lượng tài nguyên tối đa"
+      },
+      {
+        "id": "D",
+        "text": "Toàn bộ tài nguyên phải đang rảnh"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.5, tr. 274–279. Các tiến trình đứng sau có thể dùng tài nguyên do các tiến trình đứng trước trả lại.  [Dạng đề MGU]"
+  },
+  {
+    "id": 94,
+    "text": "Thuật toán kiểm tra không tìm được chuỗi an toàn. Điều nào có thể khẳng định ngay?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Trạng thái không an toàn và có nguy cơ dẫn đến bế tắc"
+      },
+      {
+        "id": "B",
+        "text": "Mọi tiến trình hiện đang bế tắc"
+      },
+      {
+        "id": "C",
+        "text": "Chắc chắn đang có chu trình trong đồ thị chờ"
+      },
+      {
+        "id": "D",
+        "text": "Tất cả tiến trình đã hoàn tất"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.5, tr. 275–279. Điều kiện không an toàn phản ánh nguy cơ đối với nhu cầu tối đa trong tương lai.  [Dạng đề MGU, UCSD]"
+  },
+  {
+    "id": 95,
+    "text": "Trong cách phòng tránh bằng đồ thị với một đơn vị cho mỗi loại tài nguyên, cung đòi hỏi Pi → Rj vẽ nét đứt biểu diễn gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Pi đã được cấp Rj ở hiện tại"
+      },
+      {
+        "id": "B",
+        "text": "Pi đã trả Rj và kết thúc"
+      },
+      {
+        "id": "C",
+        "text": "Rj còn đúng hai đơn vị rảnh"
+      },
+      {
+        "id": "D",
+        "text": "Pi có thể yêu cầu Rj trong tương lai"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.5, tr. 280–281. Cung đòi hỏi ghi trước khả năng yêu cầu của tiến trình."
+  },
+  {
+    "id": 96,
+    "text": "Trong Banker, một tiến trình có Max = (6, 4) và Allocation = (2, 3). Need của nó bằng bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "(4, 1)"
+      },
+      {
+        "id": "B",
+        "text": "(2, 3)"
+      },
+      {
+        "id": "C",
+        "text": "(8, 7)"
+      },
+      {
+        "id": "D",
+        "text": "(6, 4)"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §5.5, tr. 287–291. Vận dụng: Need = Max − Allocation theo từng cột.  [Dạng đề MGU, UCE]"
+  },
+  {
+    "id": 97,
+    "text": "Trong bước kiểm tra an toàn, Work = (2, 1). P1 có Need = (2, 1), Allocation = (1, 3). Sau khi giả lập P1 hoàn tất, Work là bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "(2, 1)"
+      },
+      {
+        "id": "B",
+        "text": "(4, 2)"
+      },
+      {
+        "id": "C",
+        "text": "(1, 0)"
+      },
+      {
+        "id": "D",
+        "text": "(3, 4)"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §5.5, tr. 289–293. Vận dụng: Need ≤ Work nên chọn được P1, rồi cập nhật Work = Work + Allocation.  [Dạng đề MGU]"
+  },
+  {
+    "id": 98,
+    "text": "Banker nhận Request = (1, 3), Need = (2, 2), Available = (5, 5). Kết luận đầu tiên là gì?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Yêu cầu vượt mức khai báo vì 3 > 2 ở thành phần thứ hai"
+      },
+      {
+        "id": "B",
+        "text": "Cấp thử vì chỉ cần tổng Request bằng tổng Need"
+      },
+      {
+        "id": "C",
+        "text": "Cho chờ vì tổng Available không đủ"
+      },
+      {
+        "id": "D",
+        "text": "Cấp ngay vì cả hai thành phần đều nhỏ hơn Available"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §5.5, tr. 288–289, 294. Vận dụng: Request ≤ Need phải đúng ở từng thành phần, trước khi xét Available.  [Dạng đề MGU]"
+  },
+  {
+    "id": 99,
+    "text": "Trong thuật toán phát hiện bế tắc tổng quát cho nhiều đơn vị, đại lượng nào được so với Work để giả lập khả năng hoàn tất?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Request hiện tại"
+      },
+      {
+        "id": "B",
+        "text": "Need = Max − Allocation"
+      },
+      {
+        "id": "C",
+        "text": "Số lần đã bị chọn làm nạn nhân"
+      },
+      {
+        "id": "D",
+        "text": "Max đã khai báo"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.6, tr. 308–312. Phát hiện dùng yêu cầu đang chờ, còn kiểm tra an toàn của Banker dùng Need.  [Dạng đề UMass]"
+  },
+  {
+    "id": 100,
+    "text": "Hai nhóm biện pháp nào được slide nêu để khắc phục sau khi phát hiện bế tắc?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Phân chia thời gian và tăng quantum"
+      },
+      {
+        "id": "B",
+        "text": "Kiểm tra trạng thái an toàn và khai báo cung đòi hỏi"
+      },
+      {
+        "id": "C",
+        "text": "Kết thúc tiến trình và trưng dụng tài nguyên"
+      },
+      {
+        "id": "D",
+        "text": "Chia sẻ bộ nhớ và truyền thông điệp"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.6, tr. 325–329. Thu hồi tài nguyên bằng cách hủy tiến trình hoặc trưng dụng từ tiến trình được chọn."
+  },
+  {
+    "id": 101,
+    "text": "“Hệ điều hành là hệ thống chương trình bao trùm lên máy tính vật lý tạo ra máy logic với những tài nguyên và khả năng mới” là cách nhìn của:",
+    "options": [
+      {
+        "id": "A",
+        "text": "Người quản lí"
+      },
+      {
+        "id": "B",
+        "text": "Nhà kĩ thuật"
+      },
+      {
+        "id": "C",
+        "text": "Người lập trình hệ thống"
+      },
+      {
+        "id": "D",
+        "text": "Người sử dụng"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §3.1, tr. 40. Quan điểm kỹ thuật xem hệ điều hành là lớp tạo ra máy logic từ máy vật lý."
+  },
+  {
+    "id": 102,
+    "text": "Theo định nghĩa ở C1 mục 6.3, lời gọi hệ thống (system call) cung cấp giao diện giữa hệ điều hành và thực thể đang thực hiện nào?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Chương trình ứng dụng"
+      },
+      {
+        "id": "B",
+        "text": "Phần cứng máy tính"
+      },
+      {
+        "id": "C",
+        "text": "Người sử dụng"
+      },
+      {
+        "id": "D",
+        "text": "Tiến trình"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §5.4, tr. 77 và §6.3, tr. 95. Theo cách gọi ở tr. 95, giao diện nằm giữa tiến trình đang thực hiện và hệ điều hành."
+  },
+  {
+    "id": 103,
+    "text": "Hệ điều hành sử dụng các thành phần nào sau đây của nó để chuyển đổi ngữ cảnh và trao CPU cho một tiến trình khác (đối với tiến trình đang thực thi):",
+    "options": [
+      {
+        "id": "A",
+        "text": "Khối quản lí tài nguyên"
+      },
+      {
+        "id": "B",
+        "text": "Bộ điều phối"
+      },
+      {
+        "id": "C",
+        "text": "Bộ phân phối"
+      },
+      {
+        "id": "D",
+        "text": "Khối quản lí tiến trình"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Căn cứ trong slide · C2 §1.2, tr. 24, 31–32 và §3.1, tr. 102. Dispatcher còn được gọi là bộ điều vận. Câu hỏi phân biệt thành phần trao CPU với bộ điều phối chọn tiến trình."
+  },
+  {
+    "id": 104,
+    "text": "Để ngăn chặn tắc nghẽn chúng ta phải đảm bảo tối thiểu một trong các điều kiện gây ra tắc nghẽn không được xảy ra, trong các điều kiện sau điều kiện nào là khó có khả năng thực hiện được?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Tồn tại một chu kì trong đồ thị cấp phát tài nguyên"
+      },
+      {
+        "id": "B",
+        "text": "Sự chiếm giữ và yêu cầu thêm tài nguyên không thể chia sẻ"
+      },
+      {
+        "id": "C",
+        "text": "Không thu hồi được tài nguyên từ tiến trình đang giữ chúng"
+      },
+      {
+        "id": "D",
+        "text": "Có sử dụng tài nguyên không thể chia sẻ"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.2, tr. 244 và §5.4, tr. 257–258. Slide dùng tài nguyên không chia sẻ để minh họa điều kiện loại trừ lẫn nhau."
+  },
+  {
+    "id": 105,
+    "text": "Những nhận định nào về tiến trình sau đây sai?\n(A) Tiến trình là một chương trình đang thực hiện.\n(B) Hai tiến trình có thể thiết lập IPC mà không cần cơ chế nào do HĐH hỗ trợ.\n(C) Tiến trình luôn có quyền tự chọn khi nào phải nhường CPU, kể cả khi HĐH điều phối có trưng dụng.",
+    "options": [
+      {
+        "id": "A",
+        "text": "A"
+      },
+      {
+        "id": "B",
+        "text": "B"
+      },
+      {
+        "id": "C",
+        "text": "C"
+      },
+      {
+        "id": "D",
+        "text": "B và C"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Căn cứ trong slide · C2 §1.1, tr. 9–15, §1.5, tr. 51–52 và §3.1, tr. 100–102. HĐH hỗ trợ IPC và có thể thu CPU khi điều phối trưng dụng. Tiến trình vẫn có thể tự nhường CPU hoặc bị chặn khi chờ I/O.",
+    "fixedOrder": true
+  },
+  {
+    "id": 106,
+    "text": "Kỹ thuật nào chia một chương trình thành nhiều phần và chỉ nạp phần cần dùng vào vùng nhớ tại từng thời điểm?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Overlay"
+      },
+      {
+        "id": "B",
+        "text": "Swapping"
+      },
+      {
+        "id": "C",
+        "text": "Tất cả các đáp án trên đều sai",
+        "fixedPosition": true
+      },
+      {
+        "id": "D",
+        "text": "Tất cả các đáp án trên đều đúng",
+        "fixedPosition": true
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "explanation": "Ngoài phạm vi hai PDF đối với Overlay · Đáp án theo mini game. Overlay nạp từng phần chương trình khi cần. C2 §1.2, tr. 33 có nội dung đối chiếu về swapping, tức hoán chuyển tiến trình.",
+    "review": [
+      "Overlay là kiến thức từ mini game. C1 và C2 chỉ có phần đối chiếu về swapping ở C2 trang 33."
+    ]
+  },
+  {
+    "id": 107,
+    "text": "Giải thuật “Người quản lý nhà băng” thuộc lớp giải thuật chống bế tắc nào sau đây?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Phòng ngừa."
+      },
+      {
+        "id": "B",
+        "text": "Nhận biết và khắc phục."
+      },
+      {
+        "id": "C",
+        "text": "Phòng tránh."
+      },
+      {
+        "id": "D",
+        "text": "Cả A, B, C đều sai.",
+        "fixedPosition": true
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §5.5, tr. 274–286. Banker kiểm tra an toàn trước khi quyết định cấp thêm tài nguyên."
+  },
+  {
+    "id": 108,
+    "text": "Phương án nào liệt kê đầy đủ các mục được chia sẻ giữa các luồng cùng tiến trình trong số A, B và C?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Biến toàn cục của tiến trình"
+      },
+      {
+        "id": "B",
+        "text": "Bộ đếm chương trình, thanh ghi và stack riêng của từng luồng"
+      },
+      {
+        "id": "C",
+        "text": "Tài nguyên như tập tin đang mở"
+      },
+      {
+        "id": "D",
+        "text": "Cả A và C",
+        "fixedPosition": true
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "explanation": "Đáp án có trong slide · C1 §5.1, tr. 67 và C2 §2.1, tr. 71–72. Đã sửa phương án để phản ánh tài nguyên chung và ngữ cảnh riêng của mỗi luồng.",
+    "references": {
+      "D": [
+        "A",
+        "C"
+      ]
+    },
+    "review": [
+      "Bản Word đã chỉnh câu mini game để đáp án nêu đủ hai mục dùng chung. Chọn phương án tổng hợp."
+    ]
+  },
+  {
+    "id": 109,
+    "text": "Thành phần nào chọn tiến trình sẵn sàng chạy và dùng chính sách lập lịch để hướng đến việc chia sẻ CPU công bằng?",
+    "options": [
+      {
+        "id": "A",
+        "text": "Bộ phân phối"
+      },
+      {
+        "id": "B",
+        "text": "Bộ điều phối"
+      },
+      {
+        "id": "C",
+        "text": "Khối quản lí tài nguyên"
+      },
+      {
+        "id": "D",
+        "text": "Khối quản lí tiến trình"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Đáp án có trong slide · C2 §1.2, tr. 24, 31 và §3.2, tr. 104. Công bằng còn phụ thuộc chính sách lập lịch mà bộ điều phối sử dụng."
+  },
+  {
+    "id": 110,
+    "text": "Với FCFS (First Come, First Served), P1, P2 và P3 đều sẵn sàng tại thời điểm 0 và vào hàng đợi theo đúng thứ tự này. CPU burst lần lượt là 24, 3 và 3 đơn vị. Thời gian chờ trung bình là bao nhiêu?",
+    "options": [
+      {
+        "id": "A",
+        "text": "16"
+      },
+      {
+        "id": "B",
+        "text": "17"
+      },
+      {
+        "id": "C",
+        "text": "18"
+      },
+      {
+        "id": "D",
+        "text": "19"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "explanation": "Vận dụng từ slide · C2 §3.3, tr. 108–110. Ba thời gian chờ là 0, 24, 27. Trung bình bằng (0 + 24 + 27) / 3 = 17."
+  }
+]

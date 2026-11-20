@@ -1,0 +1,437 @@
+import { settings, createRun, displayOptions, outcome, submit, stats, wrongQuestions, restore, questionCount } from "./quiz.mjs";
+import { answerSpeech, questionSpeech, createSpeaker } from "./speech.mjs";
+
+const byId = id => document.getElementById(id);
+const storageKey = "he-dieu-hanh-110/v1";
+const sourceName = run => (run.set === "all" ? "Toàn bộ " : "Đề " + run.set + " · ") + run.ids.length + " câu";
+const modeNames = { original: "Nguyên bản", questions: "Đảo câu hỏi", options: "Đảo phương án", both: "Đảo cả hai" };
+const stateLabels = { right: "đúng", wrong: "sai", pending: "chưa làm", ungraded: "chưa có đáp án xác nhận" };
+let bank, map, saved, pendingAction;
+let selection = null;
+
+const questionCard = byId("question");
+const speakButton = byId("speak");
+const menu = byId("menu");
+const confirm = byId("confirm");
+const activeRun = () => saved[saved.active];
+const activeQuestion = () => map.get(activeRun().ids[activeRun().index]);
+const visibleOptions = () => displayOptions(activeQuestion(), activeRun().order[activeQuestion().id]);
+const speaker = createSpeaker(window.speechSynthesis, window.SpeechSynthesisUtterance, () => saved.speech,
+  playing => {
+    speakButton.querySelector("span").textContent = playing ? "Dừng đọc" : "Đọc";
+    speakButton.setAttribute("aria-pressed", String(playing));
+  },
+  error => {
+    if (["interrupted", "canceled"].includes(error)) return;
+    byId("speech-status").textContent = "Chưa phát được";
+    byId("audio-notice").textContent = error === "not-allowed"
+      ? "Bấm Đọc để cho phép trình duyệt phát giọng nói."
+      : "Trình duyệt không phát được giọng này. Thử chọn một giọng khác trong danh sách.";
+  }
+);
+
+function save() {
+  try {
+    localStorage.setItem(storageKey, JSON.stringify(saved));
+    byId("storage-status").textContent = "Tự lưu";
+  } catch {
+    byId("storage-status").textContent = "Chỉ lưu trong phiên này";
+  }
+}
+
+function restoreOrStart() {
+  let restored;
+  try { restored = restore(JSON.parse(localStorage.getItem(storageKey)), bank); }
+  catch { /* Start a new session if storage is unavailable or corrupt. */ }
+  return restored ?? {
+    version: 1, main: createRun(bank, "all", "original"), retry: null, active: "main",
+    marks: [], speech: { ...settings }, filter: "all",
+  };
+}
+
+function textNode(tag, text, className) {
+  const element = document.createElement(tag);
+  if (className) element.className = className;
+  element.textContent = text;
+  return element;
+}
+
+function renderQuestion() {
+  const run = activeRun();
+  const question = activeQuestion();
+  const answer = run.answers[question.id];
+  const result = outcome(question, answer);
+  const options = visibleOptions();
+  byId("active-title").textContent = saved.active === "retry"
+    ? "Làm lại câu sai · " + sourceName(saved.main)
+    : sourceName(saved.main) + " · " + modeNames[run.mode];
+  byId("question-count").textContent = "Câu " + (run.index + 1) + " / " + run.ids.length;
+  byId("original-number").textContent = "Câu gốc " + question.id;
+  byId("question-text").textContent = question.text || "Tài liệu chưa có nội dung câu hỏi này.";
+
+  const note = byId("source-note");
+  note.hidden = !question.review?.length;
+  note.textContent = question.review?.length ? "Cần đối chiếu · " + question.review.join(" ") : "";
+
+  const marked = saved.marks.includes(question.id);
+  byId("mark").setAttribute("aria-pressed", String(marked));
+  byId("mark").querySelector("span").textContent = marked ? "Đã đánh dấu" : "Đánh dấu";
+  byId("previous").disabled = run.index === 0;
+  byId("next").disabled = run.index === run.ids.length - 1;
+
+  const optionsElement = byId("options");
+  optionsElement.replaceChildren();
+  for (const option of options) {
+    const button = textNode("button", "", "option");
+    button.type = "button";
+    button.dataset.option = option.id;
+    const badge = textNode("span", option.letter, "option-letter");
+    const symbol = textNode("span", "", "option-symbol");
+    button.append(badge, textNode("span", option.text), symbol);
+    const label = [option.letter + ".", option.text];
+    if (answer) {
+      button.setAttribute("aria-disabled", "true");
+      if (question.correct.includes(option.id)) {
+        button.dataset.result = "right";
+        symbol.textContent = "✓";
+        label.push("Đáp án đúng");
+      } else if (answer === option.id && result === "wrong") {
+        button.dataset.result = "wrong";
+        symbol.textContent = "×";
+        label.push("Đã chọn, sai");
+      }
+      if (answer === option.id) button.dataset.attempt = "true";
+    }
+    symbol.setAttribute("aria-hidden", "true");
+    button.setAttribute("aria-label", label.join(" "));
+    button.addEventListener("click", () => choose(option.id));
+    optionsElement.append(button);
+  }
+  updateSelection(false);
+  const feedback = byId("feedback");
+  feedback.hidden = !answer;
+  feedback.dataset.result = result;
+  feedback.replaceChildren();
+  if (answer) {
+    const resultText = { right: "✓ Chính xác", wrong: "× Chưa chính xác", ungraded: "Đã ghi nhận lựa chọn" };
+    feedback.append(textNode("strong", resultText[result]));
+    const correct = options.filter(option => question.correct.includes(option.id));
+    feedback.append(textNode("span", correct.length
+      ? "Đáp án đúng là " + correct.map(option => option.letter + ". " + option.text).join(" / ")
+      : "Tài liệu chưa xác định đáp án đúng."));
+    if (question.explanation) {
+      feedback.append(textNode("p", question.explanation, "explanation"));
+    }
+  }
+}
+
+function updateSelection(focus) {
+  byId("options").querySelectorAll("button").forEach((button, index) => {
+    button.dataset.selected = String(index === selection);
+    button.setAttribute("aria-pressed", String(index === selection || button.dataset.attempt === "true"));
+    if (focus && index === selection) button.focus();
+  });
+}
+
+function renderProgress() {
+  const run = activeRun();
+  const counts = stats(run, map);
+  const total = run.ids.length;
+  const percent = Math.round(counts.answered / total * 100);
+  byId("answered-count").textContent = counts.answered + "/" + total + " đã làm" +
+    (counts.ungraded ? " · " + counts.ungraded + " chờ xác nhận" : "");
+  byId("percent").textContent = percent + "%";
+  byId("progress-bar").max = total;
+  byId("progress-bar").value = counts.answered;
+  byId("right-count").textContent = counts.right;
+  byId("wrong-count").textContent = counts.wrong;
+  byId("pending-count").textContent = counts.pending;
+  byId("filter").value = saved.filter;
+
+  const grid = byId("question-grid");
+  const gridScroll = grid.scrollTop;
+  const frag = document.createDocumentFragment();
+  run.ids.forEach((id, index) => {
+    const result = outcome(map.get(id), run.answers[id]);
+    const isMarked = saved.marks.includes(id);
+    const needsReview = Boolean(map.get(id).review?.length);
+    const filters = { all: true, wrong: result === "wrong", pending: result === "pending",
+      marked: isMarked, review: needsReview };
+    if (!filters[saved.filter]) return;
+    const button = textNode("button", String(id), "cell");
+    button.type = "button";
+    button.dataset.question = String(id);
+    button.dataset.result = result;
+    button.dataset.marked = String(isMarked);
+    if (index === run.index) button.setAttribute("aria-current", "true");
+    button.setAttribute("aria-label", "Câu gốc " + id + ", " + stateLabels[result]
+      + (isMarked ? ", đã đánh dấu" : "") + (needsReview ? ", cần đối chiếu" : ""));
+    button.addEventListener("click", () => goTo(index));
+    frag.append(button);
+  });
+  byId("grid-empty").hidden = Boolean(frag.childElementCount);
+  grid.replaceChildren(frag);
+  grid.scrollTop = gridScroll;
+
+  const reviewCount = run.ids.filter(id => map.get(id).review?.length).length;
+  const linkArea = byId("review-links");
+  linkArea.hidden = !reviewCount;
+  linkArea.replaceChildren();
+  if (reviewCount) {
+    const button = textNode("button", reviewCount + " câu cần đối chiếu tài liệu");
+    button.type = "button";
+    button.addEventListener("click", () => {
+      saved.filter = saved.filter === "review" ? "all" : "review";
+      renderProgress();
+      byId("filter").focus();
+      save();
+    });
+    linkArea.append(button);
+  }
+}
+
+function readCurrent() {
+  byId("audio-notice").textContent = "";
+  speaker.start(questionSpeech(activeQuestion().text, visibleOptions(), saved.speech.readOptions));
+}
+
+function focusQuestion() {
+  questionCard.focus({ preventScroll: true });
+  questionCard.scrollIntoView({ block: "start" });
+}
+
+function present({ focus = false, read = false } = {}) {
+  selection = null;
+  renderQuestion();
+  renderProgress();
+  save();
+  if (focus) focusQuestion();
+  if (read) readCurrent();
+}
+
+function goTo(index) {
+  const run = activeRun();
+  if (index < 0 || index >= run.ids.length || run.index === index) return;
+  run.index = index;
+  present({ focus: true, read: true });
+}
+
+function choose(id) {
+  const question = activeQuestion();
+  if (!submit(activeRun(), question, id)) return;
+  const focusedOption = document.activeElement?.closest("#options button");
+  const correctOptions = visibleOptions().filter(option => question.correct.includes(option.id));
+  present();
+  if (focusedOption) {
+    [...byId("options").children].find(button => button.dataset.option === id)?.focus({ preventScroll: true });
+  }
+  speaker.start(answerSpeech(correctOptions));
+}
+
+function toggleRead() {
+  if (speaker.playing) speaker.stop();
+  else readCurrent();
+}
+
+function restart(set, mode) {
+  saved.main = createRun(bank, set, mode);
+  saved.active = "main";
+  saved.retry = null;
+  saved.filter = "all";
+  present({ focus: true, read: true });
+}
+
+function askRestart(description, action) {
+  pendingAction = action;
+  byId("confirm-text").textContent = description;
+  confirm.returnValue = "";
+  confirm.showModal();
+}
+
+function changeView(view) {
+  saved.active = view;
+  saved.filter = "all";
+  menu.close();
+  present({ focus: true, read: true });
+}
+
+function openMenu() {
+  const run = activeRun();
+  byId("set").value = saved.main.set;
+  byId("shuffle").value = saved.main.mode;
+  const wrong = wrongQuestions(run, map).length;
+  byId("retry").disabled = wrong === 0;
+  byId("retry").textContent = "Làm lại câu sai" + (wrong ? " (" + wrong + ")" : "");
+  byId("back-main").hidden = saved.active !== "retry";
+  menu.showModal();
+}
+
+function setupSpeech() {
+  const renderVoices = () => {
+    const voices = speaker.supported ? window.speechSynthesis.getVoices() : [];
+    for (const lang of ["vi", "en"]) {
+      const select = byId("voice-" + lang);
+      select.replaceChildren(new Option("Tự động · Ưu tiên Google", ""));
+      for (const voice of voices.filter(v => v.lang.toLowerCase().split(/[-_]/)[0] === lang)) {
+        select.add(new Option(voice.name + " · " + voice.lang, voice.voiceURI));
+      }
+      select.value = Array.from(select.options).some(opt => opt.value === saved.speech[lang]) ? saved.speech[lang] : "";
+      select.disabled = !speaker.supported;
+    }
+    const hasVi = voices.some(v => /^vi(?:-|_|$)/i.test(v.lang));
+    byId("speech-status").textContent = !speaker.supported ? "Trình duyệt chưa hỗ trợ" :
+      voices.length && !hasVi ? "Thiếu giọng tiếng Việt" : "";
+    if (voices.length && !hasVi) {
+      byId("audio-notice").textContent = "Thiết bị chưa cung cấp giọng tiếng Việt. Có thể bổ sung giọng trong cài đặt hệ điều hành hoặc thử trình duyệt khác.";
+    }
+    speakButton.disabled = !speaker.supported;
+  };
+  for (const lang of ["vi", "en"]) {
+    byId("voice-" + lang).addEventListener("change", event => {
+      saved.speech[lang] = event.target.value;
+      speaker.stop();
+      save();
+    });
+  }
+  window.speechSynthesis?.addEventListener("voiceschanged", renderVoices);
+  renderVoices();
+  for (const [key, unit] of [["rate", "×"], ["volume", "%"]]) {
+    const input = byId(key);
+    const output = byId(key + "-value");
+    const sync = () => {
+      output.value = key === "volume" ? Math.round(saved.speech.volume * 100) + unit
+        : saved.speech.rate.toLocaleString("vi-VN") + unit;
+    };
+    input.value = saved.speech[key];
+    sync();
+    input.addEventListener("input", () => {
+      saved.speech[key] = Number(input.value);
+      sync();
+      save();
+    });
+  }
+  byId("read-options").checked = saved.speech.readOptions;
+  byId("read-options").addEventListener("change", event => {
+    saved.speech.readOptions = event.target.checked;
+    save();
+  });
+}
+
+function setupControls() {
+  byId("mark").addEventListener("click", () => {
+    const id = activeQuestion().id;
+    saved.marks = saved.marks.includes(id) ? saved.marks.filter(mark => mark !== id) : [...saved.marks, id];
+    renderQuestion();
+    renderProgress();
+    save();
+  });
+  byId("filter").addEventListener("change", event => {
+    saved.filter = event.target.value;
+    renderProgress();
+    save();
+  });
+  byId("previous").addEventListener("click", () => goTo(activeRun().index - 1));
+  byId("next").addEventListener("click", () => goTo(activeRun().index + 1));
+  speakButton.addEventListener("click", toggleRead);
+  byId("open-menu").addEventListener("click", openMenu);
+  menu.querySelector("[data-close]").addEventListener("click", () => menu.close());
+  byId("menu-form").addEventListener("submit", event => {
+    event.preventDefault();
+    const set = byId("set").value;
+    const mode = byId("shuffle").value;
+    menu.close();
+    if (set === saved.main.set && mode === saved.main.mode) {
+      if (saved.active === "retry") changeView("main");
+      return;
+    }
+    if (Object.keys(saved.main.answers).length) {
+      askRestart("Áp dụng đề hoặc kiểu đảo mới sẽ đặt lại tiến độ hiện tại. Các câu đã đánh dấu vẫn được lưu.",
+        () => restart(set, mode));
+    } else restart(set, mode);
+  });
+  byId("new-run").addEventListener("click", () => {
+    if (saved.active === "retry") {
+      askRestart("Tiến độ ôn lại câu sai sẽ được đặt lại. Kết quả của lượt chính và các câu đã đánh dấu vẫn được lưu.", () => {
+        saved.retry = createRun(bank, saved.retry.set, saved.retry.mode, saved.retry.ids);
+        saved.filter = "all";
+        present({ focus: true, read: true });
+      });
+    } else {
+      askRestart("Tiến độ của lượt hiện tại sẽ được đặt lại. Các câu đã đánh dấu vẫn được lưu.",
+        () => restart(saved.main.set, saved.main.mode));
+    }
+  });
+  confirm.querySelector("form").addEventListener("submit", event => {
+    event.preventDefault();
+    const action = event.submitter?.value === "confirm" ? pendingAction : undefined;
+    pendingAction = undefined;
+    confirm.close();
+    action?.();
+  });
+  confirm.addEventListener("cancel", () => { pendingAction = undefined; });
+  byId("retry").addEventListener("click", () => {
+    const run = activeRun();
+    const ids = wrongQuestions(run, map).sort((a, b) => a - b);
+    if (!ids.length) return;
+    saved.retry = createRun(bank, run.set, run.mode, ids);
+    changeView("retry");
+  });
+  byId("back-main").addEventListener("click", () => changeView("main"));
+  document.addEventListener("keydown", onShortcut);
+}
+
+function onShortcut(event) {
+  if (event.defaultPrevented || event.ctrlKey || event.altKey || event.metaKey ||
+    event.isComposing || menu.open || confirm.open ||
+    event.target.closest?.("select,input,textarea,[contenteditable],summary")) return;
+  const key = event.key.toLowerCase();
+  const run = activeRun();
+  const answered = run.answers[activeQuestion().id];
+  const buttons = [...byId("options").children];
+  const focusIndex = buttons.indexOf(document.activeElement);
+  if (key === " " || key === "spacebar") {
+    if (event.repeat) return;
+    event.preventDefault();
+    toggleRead();
+  } else if (key === "arrowleft" || key === "arrowright") {
+    event.preventDefault();
+    goTo(run.index + (key === "arrowleft" ? -1 : 1));
+  } else if (!answered && /^[a-d]$/.test(key)) {
+    const index = key.charCodeAt(0) - 97;
+    if (!buttons[index]) return;
+    event.preventDefault();
+    selection = index;
+    updateSelection(true);
+  } else if (!answered && buttons.length && ["arrowup", "arrowdown"].includes(key)) {
+    event.preventDefault();
+    const step = key === "arrowup" ? -1 : 1;
+    const from = selection ?? (focusIndex === -1 ? (step > 0 ? -1 : 0) : focusIndex);
+    selection = (from + step + buttons.length) % buttons.length;
+    updateSelection(true);
+  } else if (!answered && key === "enter" && (focusIndex !== -1 || selection !== null &&
+    !event.target.closest?.("button,a"))) {
+    const index = focusIndex !== -1 ? focusIndex : selection;
+    event.preventDefault();
+    choose(buttons[index].dataset.option);
+  }
+}
+
+async function boot() {
+  try {
+    const response = await fetch(new URL("./questions.json", import.meta.url));
+    if (!response.ok) throw new Error("Không tải được dữ liệu câu hỏi.");
+    bank = await response.json();
+    if (bank.length !== questionCount) throw new Error("Thiếu dữ liệu câu hỏi.");
+    map = new Map(bank.map(question => [question.id, question]));
+    saved = restoreOrStart();
+    setupControls();
+    setupSpeech();
+    present();
+  } catch (error) {
+    byId("question-text").textContent = "Không tải được câu hỏi. Hãy tải lại trang.";
+    console.error(error);
+  }
+}
+
+boot();
+
