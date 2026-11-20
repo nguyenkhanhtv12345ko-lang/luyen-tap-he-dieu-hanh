@@ -367,7 +367,7 @@ function onShortcut(event) {
 
 async function boot() {
   try {
-    const notesReady = fetch(new URL("./study-notes.json", import.meta.url))
+    const notesReady = fetch(new URL("./study-notes.json?v=2", import.meta.url))
       .then(response => response.ok ? response.json() : null)
       .catch(() => null);
     const response = await fetch(new URL("./questions.json", import.meta.url));

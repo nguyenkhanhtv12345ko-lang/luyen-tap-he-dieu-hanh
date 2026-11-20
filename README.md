@@ -2,7 +2,7 @@
 
 [Luyện 110 câu trên GitHub Pages](https://nguyenkhanhtv12345ko-lang.github.io/luyen-tap-he-dieu-hanh/).
 
-Bộ câu hỏi được trích từ **110_cau_trac_nghiem_He_dieu_hanh_C1_C2.docx** theo thứ tự tài liệu. Mỗi câu có bốn lựa chọn và lấy đáp án từ phần tô vàng. 100 câu đầu thuộc bộ ôn tập C1/C2. Câu 101–110 là phần mini game đã biên tập trong Word. Sau khi chấm, trang hiện phần giải thích chi tiết và danh sách thuật ngữ Việt–Anh ngay dưới đáp án. Mục “Đối chiếu tài liệu” hiện luôn ghi chú và số trang PDF lấy từ Word sau khi chấm.
+Bộ câu hỏi được trích từ **110_cau_trac_nghiem_He_dieu_hanh_C1_C2.docx** theo thứ tự tài liệu. Mỗi câu có bốn lựa chọn và lấy đáp án từ phần tô vàng. 100 câu đầu thuộc bộ ôn tập C1/C2. Câu 101–110 là phần mini game đã biên tập trong Word. Sau khi chấm, trang hiện phần giải thích chi tiết ngay dưới đáp án. Chú thích Việt–Anh chỉ xuất hiện khi đáp án có thuật ngữ cần giải nghĩa. Mục “Đối chiếu tài liệu” hiện luôn ghi chú và số trang PDF lấy từ Word sau khi chấm.
 
 | Bộ | Câu gốc |
 | --- | --- |
